@@ -174,6 +174,10 @@ target_include_directories(${PROJECT_NAME}
         $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
 
+# <ItemGroup>
+#   <None Include="libs\serialization\src\basic_xml_grammar.ipp" />
+# </ItemGroup>
+
 target_compile_definitions(${PROJECT_NAME}
     PRIVATE
         "BOOST_ALL_NO_LIB"

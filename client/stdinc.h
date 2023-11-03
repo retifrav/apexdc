@@ -95,7 +95,7 @@
 #include <boost/function.hpp>
 #include <boost/bind.hpp>
 
-#include <bzlib.h>
+#include <bzip2/bzlib.h>
 
 #include <openssl/ssl.h>
 

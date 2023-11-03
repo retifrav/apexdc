@@ -36,6 +36,19 @@
                     "value": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
                 }
             }
+        },
+        {
+            "name": "vcpkg-windows",
+            "inherits": "vcpkg-default-triplet",
+            "displayName": "vcpkg | Windows",
+            "cacheVariables":
+            {
+                "VCPKG_TARGET_TRIPLET":
+                {
+                    "type": "STRING",
+                    "value": "x64-windows-static"
+                }
+            }
         }
     ],
     "buildPresets":
@@ -48,6 +61,11 @@
         {
             "name": "vcpkg-default-triplet",
             "configurePreset": "vcpkg-default-triplet",
+            "targets": "install"
+        },
+        {
+            "name": "vcpkg-windows",
+            "configurePreset": "vcpkg-windows",
             "targets": "install"
         }
     ]
