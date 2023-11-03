@@ -53,7 +53,7 @@ printf "${GREEN}Beginning working copy reset...\n${NC}"
 
 # get rid of utf-8 encoded files checked out before the config was changed
 rm -f ./StrongDC.rc
-rm -f ./windows/resource.h
+rm -f ./windows/Resource.h
 
 # this will delete all working copy files, excluding this script and preform a hard reset on the repository
 shopt -s extglob dotglob

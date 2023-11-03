@@ -27,7 +27,7 @@
 #include "../client/ResourceManager.h"
 
 #include "WinUtil.h"
-#include "resource.h"
+#include "Resource.h"
 #include "OMenu.h"
 
 enum {

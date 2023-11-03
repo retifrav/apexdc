@@ -27,7 +27,7 @@
 
 #include "PropPage.h"
 #include "ExListViewCtrl.h"
-#include "resource.h"
+#include "Resource.h"
 
 #include <atlctrlx.h>
 

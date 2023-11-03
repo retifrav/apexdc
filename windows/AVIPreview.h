@@ -24,7 +24,7 @@
 #endif // _MSC_VER > 1000
 
 #include <atlcrack.h>
-#include "resource.h"
+#include "Resource.h"
 
 #include "PropPage.h"
 #include "ExListViewCtrl.h"

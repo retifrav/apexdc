@@ -19,7 +19,7 @@
 #ifndef STRONGDCPLUSPLUS_FAV_HUB_GROUPS_DLG
 #define STRONGDCPLUSPLUS_FAV_HUB_GROUPS_DLG
 
-#include "resource.h"
+#include "Resource.h"
 
 class FavHubGroupsDlg : public CDialogImpl<FavHubGroupsDlg> {
 public:

@@ -23,7 +23,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "resource.h"
+#include "Resource.h"
 #include "../client/SettingsManager.h"
 
 class TreePropertySheet : public CPropertySheetImpl<TreePropertySheet> {

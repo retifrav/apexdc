@@ -31,7 +31,7 @@
 
 #include <boost/bind.hpp>
 
-#include "resource.h"
+#include "Resource.h"
 #include "OMenu.h"
 
 #include <atlcomtime.h>
