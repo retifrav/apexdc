@@ -21,7 +21,7 @@
 
 #include <cstddef>
 
-#include <bzlib.h>
+#include <bzip2/bzlib.h>
 
 using std::size_t;
 

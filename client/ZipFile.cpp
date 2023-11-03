@@ -36,7 +36,7 @@
 #include "TimerManager.h"
 #include "Util.h"
 
-#include <zip.h>
+#include <minizip/zip.h>
 #include <sys/stat.h>
 
 namespace dcpp {

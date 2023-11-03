@@ -49,8 +49,8 @@
 # define STRICTZIPUNZIP
 #endif
 
-#include <zlib.h>
-#include <unzip.h>
+#include <zlib/zlib.h>
+#include <minizip/unzip.h>
 
 namespace dcpp {
 

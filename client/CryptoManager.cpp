@@ -31,7 +31,7 @@
 #include <openssl/err.h>
 #include <openssl/rand.h>
 
-#include <bzlib.h>
+#include <bzip2/bzlib.h>
 
 namespace dcpp {
 

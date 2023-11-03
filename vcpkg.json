@@ -1,0 +1,40 @@
+{
+    "name": "apexdc",
+    "version": "1.6.5",
+    "dependencies":
+    [
+        {
+            "name": "minizip",
+            "features":
+            [
+                "bzip2"
+            ]
+        },
+        "openssl",
+        "wtl",
+        "zlib"
+    ],
+    "overrides":
+    [
+        {
+            "name": "bzip2",
+            "version": "1.0.8"
+        },
+        {
+            "name": "minizip",
+            "version": "1.2.12"
+        },
+        {
+            "name": "openssl",
+            "version": "3.1.4"
+        },
+        {
+            "name": "wtl",
+            "version": "10.0.10320"
+        },
+        {
+            "name": "zlib",
+            "version": "1.2.12"
+        }
+    ]
+}

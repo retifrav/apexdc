@@ -25,9 +25,9 @@
 
 #include "ResourceManager.h"
 
-#include <unzip.h>
+#include <minizip/unzip.h>
 #ifdef _WIN32
-#include <iowin32.h>
+#include <minizip/iowin32.h>
 #endif
 
 namespace dcpp {

@@ -22,7 +22,7 @@
 #include <cstddef>
 #include <cstdint>
 
-#include <zlib.h>
+#include <zlib/zlib.h>
 
 namespace dcpp {
 
