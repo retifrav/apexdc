@@ -53,6 +53,5 @@ compile_commands.json
 /res/*.bmp
 /res/favus.ico
 
-/windows/wtl/.svn
 /windows/InputBox.cpp
 /windows/InputBox.h
