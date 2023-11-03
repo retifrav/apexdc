@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\serialization">
+      <UniqueIdentifier>{44ce233e-8d05-459b-bdb4-4e3e248b4603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\chrono">
+      <UniqueIdentifier>{3dfb511b-1388-4e55-a2ad-34d4c76605ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\system">
+      <UniqueIdentifier>{7cd4968c-da9c-4ec5-9524-d93d3f0441d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\timer">
+      <UniqueIdentifier>{ecbec666-c143-4957-8d35-95a8e16a0b79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\log">
+      <UniqueIdentifier>{73a8d518-846e-4f0b-9433-8459bd3990a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\filesystem">
+      <UniqueIdentifier>{60f50fe2-056f-4248-bdff-82937886cd44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\regex">
+      <UniqueIdentifier>{4ad7594c-52e5-4df6-b5a9-f1ec1f9aa574}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\thread">
+      <UniqueIdentifier>{9834a908-64ef-4415-9fc2-2ab901edf18f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\locale">
+      <UniqueIdentifier>{ddce3c0c-1ee4-4f75-92dd-b0742421241f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\locale\encoding">
+      <UniqueIdentifier>{1eaea528-1033-4227-a194-96be1c714b26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\locale\util">
+      <UniqueIdentifier>{b88e86d8-930a-45cc-8f41-7757dc2303af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\locale\win32">
+      <UniqueIdentifier>{41aea07c-bf4b-422c-a697-3ad7006e19b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\locale\shared">
+      <UniqueIdentifier>{a18435b5-3637-4f18-8485-885830686e22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\random">
+      <UniqueIdentifier>{e98251c6-60fe-48c2-bfef-8858a41d43bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libs\serialization\src\archive_exception.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\basic_archive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\basic_iarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\basic_iserializer.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\basic_oarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\basic_oserializer.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\basic_pointer_iserializer.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\basic_pointer_oserializer.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\basic_serializer_map.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\basic_text_iprimitive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\basic_text_oprimitive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\basic_text_wiprimitive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\basic_text_woprimitive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\basic_xml_archive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\binary_iarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\binary_oarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\binary_wiarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\binary_woarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\codecvt_null.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\extended_type_info.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\extended_type_info_no_rtti.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\extended_type_info_typeid.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\polymorphic_iarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\polymorphic_oarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\text_iarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\text_oarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\text_wiarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\text_woarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\utf8_codecvt_facet.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\void_cast.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\xml_archive_exception.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\xml_grammar.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\xml_iarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\xml_oarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\xml_wgrammar.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\xml_wiarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\xml_woarchive.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\chrono\src\chrono.cpp">
+      <Filter>Source Files\chrono</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\chrono\src\process_cpu_clocks.cpp">
+      <Filter>Source Files\chrono</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\chrono\src\thread_clock.cpp">
+      <Filter>Source Files\chrono</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\system\src\error_code.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\timer\src\auto_timers_construction.cpp">
+      <Filter>Source Files\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\timer\src\cpu_timer.cpp">
+      <Filter>Source Files\timer</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\attribute_name.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\attribute_set.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\attribute_value_set.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\code_conversion.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\core.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\date_time_format_parser.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\default_attribute_names.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\default_sink.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\event.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\exceptions.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\format_parser.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\global_logger_storage.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\named_scope.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\named_scope_format_parser.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\once_block.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\process_id.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\process_name.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\record_ostream.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\severity_level.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\spirit_encoding.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\syslog_backend.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\text_file_backend.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\text_ostream_backend.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\thread_id.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\thread_specific.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\threadsafe_queue.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\timer.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\timestamp.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\trivial.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\unhandled_exception_count.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\filesystem\src\codecvt_error_category.cpp">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\filesystem\src\operations.cpp">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\filesystem\src\path.cpp">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\filesystem\src\path_traits.cpp">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\filesystem\src\portability.cpp">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\filesystem\src\unique_path.cpp">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\filesystem\src\utf8_codecvt_facet.cpp">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\filesystem\src\windows_file_codecvt.cpp">
+      <Filter>Source Files\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\dump.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\instances.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\fileiter.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\cregex.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\cpp_regex_traits.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\c_regex_traits.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\regex_raw_buffer.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\regex_traits_defaults.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\regex.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\static_mutex.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\posix_api.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\usinstances.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\winstances.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\wide_posix_api.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\wc_regex_traits.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\w32_regex_traits.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\thread\src\win32\thread.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\thread\src\win32\tss_pe.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\encoding\codepage.cpp">
+      <Filter>Source Files\locale\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\shared\date_time.cpp">
+      <Filter>Source Files\locale\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\shared\format.cpp">
+      <Filter>Source Files\locale\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\shared\formatting.cpp">
+      <Filter>Source Files\locale\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\shared\generator.cpp">
+      <Filter>Source Files\locale\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\shared\ids.cpp">
+      <Filter>Source Files\locale\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\shared\localization_backend.cpp">
+      <Filter>Source Files\locale\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\shared\message.cpp">
+      <Filter>Source Files\locale\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\shared\mo_lambda.cpp">
+      <Filter>Source Files\locale\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\util\codecvt_converter.cpp">
+      <Filter>Source Files\locale\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\util\default_locale.cpp">
+      <Filter>Source Files\locale\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\util\gregorian.cpp">
+      <Filter>Source Files\locale\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\util\info.cpp">
+      <Filter>Source Files\locale\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\util\locale_data.cpp">
+      <Filter>Source Files\locale\util</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\win32\collate.cpp">
+      <Filter>Source Files\locale\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\win32\converter.cpp">
+      <Filter>Source Files\locale\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\win32\lcid.cpp">
+      <Filter>Source Files\locale\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\win32\numeric.cpp">
+      <Filter>Source Files\locale\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\locale\src\win32\win_backend.cpp">
+      <Filter>Source Files\locale\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\icu.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\regex\src\regex_debug.cpp">
+      <Filter>Source Files\regex</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\thread\src\future.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\thread\src\tss_null.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\thread\src\win32\tss_dll.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\serialization\src\stl_port.cpp">
+      <Filter>Source Files\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\text_multifile_backend.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\random\src\random_device.cpp">
+      <Filter>Source Files\random</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\permissions.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\setup\default_filter_factory.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\setup\default_formatter_factory.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\setup\filter_parser.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\setup\formatter_parser.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\setup\init_from_settings.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\setup\init_from_stream.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\setup\matches_relation_factory.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\setup\parser_utils.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\windows\debug_output_backend.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\windows\event_log_backend.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\windows\ipc_reliable_message_queue.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\windows\ipc_sync_wrappers.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\windows\light_rw_mutex.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\windows\mapped_shared_memory.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\log\src\windows\object_name.cpp">
+      <Filter>Source Files\log</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\thread\src\win32\thread_primitives.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libs\serialization\src\basic_xml_grammar.ipp">
+      <Filter>Source Files\serialization</Filter>
+    </None>
+  </ItemGroup>
+</Project>

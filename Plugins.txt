@@ -1,0 +1,15 @@
+
+ As of ApexDC version 1.5.5 plugins are now officially part of DC++. This implies the following changes:
+
+  1. Most up to date versions of most plugins should be found in following locations:
+	<https://launchpad.net/dcpp-plugin-sdk-cpp> (C++ SDK project)
+	<https://launchpad.net/dcpp-plugin-sdk-c> (C SDK project)
+     This applies to ScriptPlugin (formerly LuaPlugin) and ExamplePlugin (formerly SamplePlugin) respectively.
+
+  2. The development of the core Plugin API has moved to DC++ project at <https://launchpad.net/dcplusplus>.
+
+  3. The plugin API shipped with ApexDC will thus remain identical, or least compatible, to that of DC++ and any
+     future updates to the API will be shipped as needed in maintenance releases to the most recent major version
+     of ApexDC.
+
+   4. Currently available mature plugin projects can be found over at <http://dcplusplus.sourceforge.net/plugins.html>

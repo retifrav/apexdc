@@ -1,0 +1,91 @@
+# Recursive
+.#*
+*.aps
+*.bak
+*.BAK
+*.ncb
+*.opensdf
+*.opendb
+*.sdf
+*.suo
+*.user
+*.VC.db
+thumbs.db
+
+# /
+/.vs
+/CZ_Example.xml
+/EN_Example.xml
+/StrongDC.nsi
+/compiled
+/cvs-changelog.txt
+/ipch
+/vc_intermediate
+/*.tmp
+
+# /MakeDefs/
+/MakeDefs/MakeDefs.vcproj
+/MakeDefs/Jamfile
+
+# /client/
+/client/gitdefs.inc
+/client/StringDefs.cpp
+/client/ServerSocket.cpp
+/client/ServerSocket.h
+/client/memcpy_amd.cpp
+/client/memcpy_amd.h
+/client/TraceManager.cpp
+/client/TraceManager.h
+/client/BitInputStream.h
+/client/BitOutputStream.h
+
+# /dht/
+/dht/Jamfile
+
+# /miniupnpc/
+/miniupnpc/Jamfile
+/miniupnpc/SConscript
+/miniupnpc/minihttptestserver.c
+/miniupnpc/miniupnpcmodule.c
+/miniupnpc/minixmlvalid.c
+/miniupnpc/testigddescparse.c
+/miniupnpc/testminiwget.c
+/miniupnpc/testminixml.c
+/miniupnpc/testupnpreplyparse.c
+/miniupnpc/upnpc.c
+/miniupnpc/wingenminiupnpcstrings.c
+
+# /openssl/config_bbv2/
+/openssl/config_bbv2/bin
+
+# /openssl/crypto/
+/openssl/crypto/bin
+/openssl/crypto/*.save
+/openssl/crypto/buildinf.h
+/openssl/crypto/*.bak
+/openssl/crypto/*/*.save
+
+# /openssl/engines/
+/openssl/engines/bin
+/openssl/engines/*.save
+
+# /openssl/engines/ccgost/
+/openssl/engines/ccgost/*.save
+
+# /openssl/ssl/
+/openssl/ssl/bin
+/openssl/ssl/*.save
+
+# /res/
+/res/*.bmp
+/res/favus.ico
+
+# /windows/
+/windows/wtl/.svn
+/windows/InputBox.cpp
+/windows/InputBox.h
+
+# /zlib/
+/zlib/SConscript
+
+

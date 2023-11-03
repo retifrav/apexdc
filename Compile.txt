@@ -1,0 +1,19 @@
+The most important thing about compiling: If it didn't work, *you* screwed up.
+
+How to compile in few easy steps (on Windows):
+
+1) Install Visual Studio 2012 (Professional 1.x, Express editions are fine for 2.0) and optionally TortoiseSVN.
+
+2 a) Preparing for version.h file generation using a local SVN:
+
+	2.1) Create a repository on your local computer using SVN (TortoiseSVN has a contextual menu for creating local repositories).
+
+	2.2) Import this source code into the local repository you created and then checkout a working copy of it.
+
+2 b) Creating version.h from version-template.h manually:
+
+	2.1) Go to <http://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-subwcrev-keywords.html> for the reference on the syntax of version-template.h.
+
+	2.2) Make a copy of version-template.h as version.h and replace the variables used by SubWCRev with sane values.
+
+3) Open the solution file in Visual Studio and build away.
