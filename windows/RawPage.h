@@ -21,7 +21,7 @@
 
 #include "../client/RawManager.h"
 
-#include <atlcrack.h>
+#include <wtl/atlcrack.h>
 #include "PropPage.h"
 #include "ExListViewCtrl.h"
 

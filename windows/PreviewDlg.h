@@ -18,7 +18,7 @@
 
 #pragma once
 
-#include <atlcrack.h>
+#include <wtl/atlcrack.h>
 #include "../client/Util.h"
 
 class PreviewDlg : public CDialogImpl<PreviewDlg> {

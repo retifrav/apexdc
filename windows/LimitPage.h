@@ -1,7 +1,7 @@
 #ifndef LimitPAGE_H
 #define LimitPAGE_H
 
-#include <atlcrack.h>
+#include <wtl/atlcrack.h>
 #include "PropPage.h"
 #include "../client/ConnectionManager.h"
 

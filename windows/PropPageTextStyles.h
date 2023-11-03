@@ -1,7 +1,7 @@
 #ifndef _PROP_PAGE_TEXT_STYLES_H_
 #define _PROP_PAGE_TEXT_STYLES_H_
 
-#include <atlcrack.h>
+#include <wtl/atlcrack.h>
 #include "PropPage.h"
 #include "../client/ConnectionManager.h"
 #include "ChatCtrl.h"

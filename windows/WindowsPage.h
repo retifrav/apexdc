@@ -23,7 +23,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include <atlcrack.h>
+#include <wtl/atlcrack.h>
 #include "PropPage.h"
 
 class WindowsPage : public CPropertyPage<IDD_WINDOWSPAGE>, public PropPage

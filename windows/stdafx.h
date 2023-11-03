@@ -37,7 +37,7 @@ using namespace dht;
 #include <multimon.h>
 
 #include <atlbase.h>
-#include <atlapp.h>
+#include <wtl/atlapp.h>
 
 extern CAppModule _Module;
 
@@ -45,14 +45,14 @@ extern CAppModule _Module;
 //#define _WTL_CMDBAR_VISTA_MENUS 0
 //#define _WTL_NO_AUTO_THEME 1
 #include <atlwin.h>
-#include <atlframe.h>
-#include <atlctrls.h>
+#include <wtl/atlframe.h>
+#include <wtl/atlctrls.h>
 
-#include <atldlgs.h>
-#include <atlctrlw.h>
-#include <atlmisc.h>
-#include <atlsplit.h>
-#include <atltheme.h>
+#include <wtl/atldlgs.h>
+#include <wtl/atlctrlw.h>
+#include <wtl/atlmisc.h>
+#include <wtl/atlsplit.h>
+#include <wtl/atltheme.h>
 #include <Shellapi.h>
 
 #include <mmsystem.h>

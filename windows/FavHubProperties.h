@@ -26,7 +26,7 @@
 #include "../client/RawManager.h"
 
 #include "ExListViewCtrl.h"
-#include <atlcrack.h>
+#include <wtl/atlcrack.h>
 
 class FavHubProperties : public CDialogImpl<FavHubProperties>
 {

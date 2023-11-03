@@ -33,7 +33,7 @@
 #pragma once
 
 #include <string>
-#include <AtlCrack.h>
+#include <wtl/atlcrack.h>
 
 class CDimEdit : public CWindowImpl< CDimEdit, CEdit > {
 public:
