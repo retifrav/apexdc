@@ -28,12 +28,12 @@
 #include "ChatCtrl.h"
 #include "WinUtil.h"
 
-#include "../client/Client.h"
-#include "../client/SearchManager.h"
-#include "../client/ClientManagerListener.h"
-#include "../client/FavoriteManager.h"
-#include "../client/QueueManager.h"
-#include "../client/SearchResult.h"
+#include <client/Client.h>
+#include <client/SearchManager.h>
+#include <client/ClientManagerListener.h>
+#include <client/FavoriteManager.h>
+#include <client/QueueManager.h>
+#include <client/SearchResult.h>
 
 #include "UCHandler.h"
 

@@ -19,10 +19,10 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/StringTokenizer.h"
-#include "../client/ShareManager.h"
-#include "../client/ClientManager.h"
-#include "../client/version.h"
+#include <client/StringTokenizer.h>
+#include <client/ShareManager.h>
+#include <client/ClientManager.h>
+#include <client/version.h>
 
 #include "QueueFrame.h"
 #include "SearchFrm.h"

@@ -23,7 +23,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/TimerManager.h"
+#include <client/TimerManager.h>
 
 #include "FlatTabCtrl.h"
 #include "WinUtil.h"

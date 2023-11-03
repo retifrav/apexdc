@@ -27,7 +27,7 @@
 #include "SettingsManager.h"
 
 #include "WebServerManager.h"
-#include "../dht/DHT.h"
+#include <dht/DHT.h>
 
 namespace dcpp {
 

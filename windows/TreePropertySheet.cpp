@@ -18,7 +18,7 @@
 
 #include "stdafx.h"
 
-#include "../client/ResourceManager.h"
+#include <client/ResourceManager.h>
 
 #include "TreePropertySheet.h"
 #include "ResourceLoader.h" 

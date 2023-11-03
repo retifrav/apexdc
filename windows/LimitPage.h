@@ -3,7 +3,7 @@
 
 #include <wtl/atlcrack.h>
 #include "PropPage.h"
-#include "../client/ConnectionManager.h"
+#include <client/ConnectionManager.h>
 
 class LimitPage : public CPropertyPage<IDD_LIMITPAGE>, public PropPage
 {

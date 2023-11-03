@@ -23,10 +23,10 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/Util.h"
-#include "../client/DetectionManager.h"
-#include "../client/RawManager.h"
-#include "../client/version.h"
+#include <client/Util.h>
+#include <client/DetectionManager.h>
+#include <client/RawManager.h>
+#include <client/version.h>
 
 #include "ExListViewCtrl.h"
 

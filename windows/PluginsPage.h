@@ -23,7 +23,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/PluginManager.h"
+#include <client/PluginManager.h>
 
 #include "PropPage.h"
 #include "ExListViewCtrl.h"

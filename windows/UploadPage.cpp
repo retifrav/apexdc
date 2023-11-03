@@ -19,8 +19,8 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/SettingsManager.h"
-#include "../client/ShareManager.h"
+#include <client/SettingsManager.h>
+#include <client/ShareManager.h>
 
 #include "UploadPage.h"
 

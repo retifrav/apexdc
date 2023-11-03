@@ -19,9 +19,9 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/Util.h"
-#include "../client/SettingsManager.h"
-#include "../client/version.h"
+#include <client/Util.h>
+#include <client/SettingsManager.h>
+#include <client/version.h>
 
 #include "RawPage.h"
 #include "LineDlg.h"

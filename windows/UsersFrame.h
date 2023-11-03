@@ -27,9 +27,9 @@
 #include "TypedListViewCtrl.h"
 #include "WinUtil.h"
 
-#include "../client/FavoriteManager.h"
-#include "../client/File.h"
-#include "../client/OnlineUser.h"
+#include <client/FavoriteManager.h>
+#include <client/File.h>
+#include <client/OnlineUser.h>
 
 class UsersFrame : public MDITabChildWindowImpl<UsersFrame, RGB(0, 0, 0), IDR_USERS>, public StaticFrame<UsersFrame, ResourceManager::FAVORITE_USERS, IDC_FAVUSERS>,
 	private FavoriteManagerListener, public UserInfoBaseHandler<UsersFrame>, private SettingsManagerListener {

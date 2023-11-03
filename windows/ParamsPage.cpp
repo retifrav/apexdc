@@ -1,9 +1,9 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/SettingsManager.h"
-#include "../client/DetectionManager.h"
-#include "../client/version.h"
+#include <client/SettingsManager.h>
+#include <client/DetectionManager.h>
+#include <client/version.h>
 
 #include "ParamsPage.h"
 #include "ParamDlg.h"

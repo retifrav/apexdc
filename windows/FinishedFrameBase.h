@@ -31,9 +31,9 @@
 #include "WinUtil.h"
 #include "TextFrame.h"
 
-#include "../client/ClientManager.h"
-#include "../client/StringTokenizer.h"
-#include "../client/FinishedManager.h"
+#include <client/ClientManager.h>
+#include <client/StringTokenizer.h>
+#include <client/FinishedManager.h>
 
 template<class T, int title, int id, int icon>
 class FinishedFrameBase : public MDITabChildWindowImpl<T, RGB(0, 0, 0), icon>, public StaticFrame<T, title, id>,

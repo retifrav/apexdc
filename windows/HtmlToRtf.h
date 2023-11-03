@@ -19,7 +19,7 @@
 #ifndef DCPLUSPLUS_WIN32_HTML_TO_RTF_H
 #define DCPLUSPLUS_WIN32_HTML_TO_RTF_H
 
-#include "../client/typedefs.h"
+#include <client/typedefs.h>
 
 /** Convert an HTML string to an RTF string, suitable for insertion within a Rich Edit control.
 Only simple HTML tags (those that are marked as "phrasing content" in the HTML5 spec) are

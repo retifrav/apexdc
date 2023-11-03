@@ -47,7 +47,7 @@
 #include "HttpManager.h"
 #include "UpdateManager.h"
 
-#include "../dht/DHT.h"
+#include <dht/DHT.h>
 
 namespace dcpp {
 

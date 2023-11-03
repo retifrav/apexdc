@@ -19,16 +19,16 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/ResourceManager.h"
-#include "../client/SettingsManager.h"
-#include "../client/ConnectionManager.h"
-#include "../client/DownloadManager.h"
-#include "../client/UploadManager.h"
-#include "../client/QueueManager.h"
-#include "../client/QueueItem.h"
-#include "../client/UserConnection.h"
-#include "../client/ThrottleManager.h"
-#include "../client/version.h"
+#include <client/ResourceManager.h>
+#include <client/SettingsManager.h>
+#include <client/ConnectionManager.h>
+#include <client/DownloadManager.h>
+#include <client/UploadManager.h>
+#include <client/QueueManager.h>
+#include <client/QueueItem.h>
+#include <client/UserConnection.h>
+#include <client/ThrottleManager.h>
+#include <client/version.h>
 
 #include "WinUtil.h"
 #include "TransferView.h"

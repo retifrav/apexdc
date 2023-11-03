@@ -19,8 +19,8 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/SettingsManager.h"
-#include "../client/StringTokenizer.h"
+#include <client/SettingsManager.h>
+#include <client/StringTokenizer.h>
 
 #include "AppearancePage.h"
 #include "WinUtil.h"

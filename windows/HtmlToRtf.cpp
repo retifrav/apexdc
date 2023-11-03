@@ -25,14 +25,14 @@
 
 #include <boost/algorithm/string/trim.hpp>
 
-#include "../client/debug.h"
-#include "../client/Flags.h"
-#include "../client/ScopedFunctor.h"
-#include "../client/SettingsManager.h"
-#include "../client/SimpleXML.h"
-#include "../client/SimpleXMLReader.h"
-#include "../client/StringTokenizer.h"
-#include "../client/Text.h"
+#include <client/debug.h>
+#include <client/Flags.h>
+#include <client/ScopedFunctor.h>
+#include <client/SettingsManager.h>
+#include <client/SimpleXML.h>
+#include <client/SimpleXMLReader.h>
+#include <client/StringTokenizer.h>
+#include <client/Text.h>
 
 struct Parser : SimpleXMLReader::CallBack {
 	Parser(HWND hWnd);

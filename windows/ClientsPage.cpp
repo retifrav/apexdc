@@ -2,7 +2,7 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/SettingsManager.h"
+#include <client/SettingsManager.h>
 
 #include "ClientsPage.h"
 #include "DetectionEntryDlg.h"

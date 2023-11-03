@@ -23,8 +23,8 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/ADLSearch.h"
-#include "../client/RawManager.h"
+#include <client/ADLSearch.h>
+#include <client/RawManager.h>
 
 ///////////////////////////////////////////////////////////////////////////////
 //

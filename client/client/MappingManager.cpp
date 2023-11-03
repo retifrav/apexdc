@@ -28,7 +28,7 @@
 #include "version.h"
 #include "format.h"
 
-#include "../dht/DHT.h"
+#include <dht/DHT.h>
 
 namespace dcpp {
 

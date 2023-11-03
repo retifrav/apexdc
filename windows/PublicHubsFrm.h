@@ -27,8 +27,8 @@
 #include "ExListViewCtrl.h"
 #include "Resource.h"
 
-#include "../client/FavoriteManager.h"
-#include "../client/StringSearch.h"
+#include <client/FavoriteManager.h>
+#include <client/StringSearch.h>
 
 #include "WinUtil.h"
 

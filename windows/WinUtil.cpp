@@ -30,19 +30,19 @@
 #include "LineDlg.h"
 #include "MainFrm.h"
 
-#include "../client/Util.h"
-#include "../client/StringTokenizer.h"
-#include "../client/ShareManager.h"
-#include "../client/ClientManager.h"
-#include "../client/TimerManager.h"
-#include "../client/FavoriteManager.h"
-#include "../client/ResourceManager.h"
-#include "../client/QueueManager.h"
-#include "../client/UploadManager.h"
-#include "../client/HashManager.h"
-#include "../client/LogManager.h"
-#include "../client/Magnet.h"
-#include "../client/version.h"
+#include <client/Util.h>
+#include <client/StringTokenizer.h>
+#include <client/ShareManager.h>
+#include <client/ClientManager.h>
+#include <client/TimerManager.h>
+#include <client/FavoriteManager.h>
+#include <client/ResourceManager.h>
+#include <client/QueueManager.h>
+#include <client/UploadManager.h>
+#include <client/HashManager.h>
+#include <client/LogManager.h>
+#include <client/Magnet.h>
+#include <client/version.h>
 
 #include "HubFrame.h"
 #include "MagnetDlg.h"

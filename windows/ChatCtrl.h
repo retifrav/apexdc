@@ -23,7 +23,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/Client.h"
+#include <client/Client.h>
 
 #include "TypedListViewCtrl.h"
 #include "ImageDataObject.h"

@@ -19,8 +19,8 @@
 #include "stdafx.h"
 #include "PluginApiWin.h"
 
-#include "../client/PluginManager.h"
-#include "../client/Text.h"
+#include <client/PluginManager.h>
+#include <client/Text.h>
 
 #include "MainFrm.h"
 

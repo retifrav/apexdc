@@ -23,8 +23,8 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/FavoriteManager.h"
-#include "../client/ClientManager.h"
+#include <client/FavoriteManager.h>
+#include <client/ClientManager.h>
 
 template<class T>
 class UCHandler {

@@ -43,7 +43,7 @@
 #include "SharedFileStream.h"
 #include "RegEx.h"
 
-#include "../dht/IndexManager.h"
+#include <dht/IndexManager.h>
 
 #if !defined(_WIN32) && !defined(PATH_MAX) // Extra PATH_MAX check for Mac OS X
 #include <sys/syslimits.h>

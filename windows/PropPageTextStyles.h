@@ -3,9 +3,9 @@
 
 #include <wtl/atlcrack.h>
 #include "PropPage.h"
-#include "../client/ConnectionManager.h"
+#include <client/ConnectionManager.h>
 #include "ChatCtrl.h"
-#include "../client/SettingsManager.h"
+#include <client/SettingsManager.h>
 
 
 class PropPageTextStyles: public CPropertyPage<IDD_TEXT_STYLES>, public PropPage

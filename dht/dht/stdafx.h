@@ -6,7 +6,7 @@
 #ifndef _STDAFX_H
 #define _STDAFX_H
 
-#include "../client/stdinc.h"
+#include <client/stdinc.h>
 
 namespace dht 
 {

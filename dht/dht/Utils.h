@@ -21,9 +21,9 @@
 
 #include <list>
 
-#include "../client/AdcCommand.h"
-#include "../client/CID.h"
-#include "../client/MerkleTree.h"
+#include <client/AdcCommand.h>
+#include <client/CID.h>
+#include <client/MerkleTree.h>
 
 namespace dht
 {

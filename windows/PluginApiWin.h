@@ -23,7 +23,7 @@
 
 #include <string>
 
-#include "../client/PluginDefs.h"
+#include <client/PluginDefs.h>
 
 class PluginApiWin {
 public:

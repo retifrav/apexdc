@@ -19,7 +19,7 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/StringTokenizer.h"
+#include <client/StringTokenizer.h>
 
 #include "UsersFrame.h"
 #include "LineDlg.h"

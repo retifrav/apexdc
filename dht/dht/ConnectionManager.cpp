@@ -22,9 +22,9 @@
 #include "ConnectionManager.h"
 #include "DHT.h"
 
-#include "../client/ClientManager.h"
-#include "../client/ConnectionManager.h"
-#include "../client/CryptoManager.h"
+#include <client/ClientManager.h>
+#include <client/ConnectionManager.h>
+#include <client/CryptoManager.h>
 
 namespace dht
 {

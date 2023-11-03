@@ -23,7 +23,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/RawManager.h"
+#include <client/RawManager.h>
 
 #include "ExListViewCtrl.h"
 #include <wtl/atlcrack.h>

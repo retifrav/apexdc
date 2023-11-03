@@ -24,7 +24,7 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/Client.h"
+#include <client/Client.h>
 
 #include "ADLSearchFrame.h"
 #include "AdlsProperties.h"

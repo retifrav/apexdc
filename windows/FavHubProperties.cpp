@@ -23,8 +23,8 @@
 
 #include "FavHubProperties.h"
 
-#include "../client/FavoriteManager.h"
-#include "../client/ResourceManager.h"
+#include <client/FavoriteManager.h>
+#include <client/ResourceManager.h>
 
 LRESULT FavHubProperties::OnInitDialog(UINT, WPARAM, LPARAM, BOOL&)
 {

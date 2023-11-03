@@ -26,18 +26,18 @@
 #include "TaskManager.h"
 #include "Utils.h"
 
-#include "../client/AdcCommand.h"
-#include "../client/ChatMessage.h"
-#include "../client/CID.h"
-#include "../client/ClientManager.h"
-#include "../client/CryptoManager.h"
-#include "../client/LogManager.h"
-#include "../client/SettingsManager.h"
-#include "../client/ShareManager.h"
-#include "../client/UploadManager.h"
-#include "../client/ThrottleManager.h"
-#include "../client/User.h"
-#include "../client/version.h"
+#include <client/AdcCommand.h>
+#include <client/ChatMessage.h>
+#include <client/CID.h>
+#include <client/ClientManager.h>
+#include <client/CryptoManager.h>
+#include <client/LogManager.h>
+#include <client/SettingsManager.h>
+#include <client/ShareManager.h>
+#include <client/UploadManager.h>
+#include <client/ThrottleManager.h>
+#include <client/User.h>
+#include <client/version.h>
 
 namespace dht
 {

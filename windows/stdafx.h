@@ -20,10 +20,10 @@
 #ifndef DCPLUSPLUS_WIN32_STDAFX_H
 #define DCPLUSPLUS_WIN32_STDAFX_H
 
-#include "../client/stdinc.h"
-#include "../client/ResourceManager.h"
+#include <client/stdinc.h>
+#include <client/ResourceManager.h>
 
-#include "../dht/stdafx.h"
+#include <dht/stdafx.h>
 
 using namespace dcpp;
 using namespace std;

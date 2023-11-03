@@ -19,10 +19,10 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/Util.h"
-#include "../client/ShareManager.h"
-#include "../client/SettingsManager.h"
-#include "../client/version.h"
+#include <client/Util.h>
+#include <client/ShareManager.h>
+#include <client/SettingsManager.h>
+#include <client/version.h>
 
 #include "SharePage.h"
 #include "WinUtil.h"

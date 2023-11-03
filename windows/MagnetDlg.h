@@ -23,8 +23,8 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/QueueManager.h"
-#include "../client/FavoriteManager.h"
+#include <client/QueueManager.h>
+#include <client/FavoriteManager.h>
 
 // (Modders) Enjoy my liberally commented out source code.  The plan is to enable the
 // magnet link add an entry to the download queue, with just the hash (if that is the

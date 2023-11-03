@@ -23,8 +23,8 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../Client/SettingsManager.h"
-#include "../client/FavoriteManager.h"
+#include <client/SettingsManager.h>
+#include <client/FavoriteManager.h>
 #include "ListViewArrows.h"
 #include "ResourceLoader.h"
 

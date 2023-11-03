@@ -19,8 +19,8 @@
 #ifndef _TASKMANAGER_H
 #define _TASKMANAGER_H
 
-#include "../client/Singleton.h"
-#include "../client/TimerManager.h"
+#include <client/Singleton.h>
+#include <client/TimerManager.h>
 
 namespace dht
 {

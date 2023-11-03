@@ -19,12 +19,12 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/QueueManager.h"
-#include "../client/StringTokenizer.h"
-#include "../client/ClientManager.h"
-#include "../client/TimerManager.h"
-#include "../client/SearchManager.h"
-#include "../client/ShareManager.h"
+#include <client/QueueManager.h>
+#include <client/StringTokenizer.h>
+#include <client/ClientManager.h>
+#include <client/TimerManager.h>
+#include <client/SearchManager.h>
+#include <client/ShareManager.h>
 
 #include "MainFrm.h"
 #include "SearchFrm.h"

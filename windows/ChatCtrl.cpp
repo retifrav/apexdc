@@ -17,11 +17,11 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/FavoriteManager.h"
-#include "../client/UploadManager.h"
-#include "../client/PluginManager.h"
-#include "../client/SimpleXml.h"
-#include "../client/Magnet.h"
+#include <client/FavoriteManager.h>
+#include <client/UploadManager.h>
+#include <client/PluginManager.h>
+#include <client/SimpleXml.h>
+#include <client/Magnet.h>
 
 #include "ChatCtrl.h"
 #include "HtmlToRtf.h"

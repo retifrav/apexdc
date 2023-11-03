@@ -23,9 +23,9 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/SettingsManager.h"
-#include "../client/Text.h"
-#include "../Client/FavoriteManager.h"
+#include <client/SettingsManager.h>
+#include <client/Text.h>
+#include <client/FavoriteManager.h>
 #include "ExListViewCtrl.h"
 #include "LineDlg.h"
 

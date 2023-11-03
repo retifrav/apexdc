@@ -20,9 +20,9 @@
 
 #include "Mapper_MiniUPnPc.h"
 
-#include "../client/SettingsManager.h"
-#include "../client/Util.h"
-#include "../client/nullptr.h"
+#include <client/SettingsManager.h>
+#include <client/Util.h>
+#include <client/nullptr.h>
 
 extern "C" {
 #ifndef MINIUPNP_STATICLIB

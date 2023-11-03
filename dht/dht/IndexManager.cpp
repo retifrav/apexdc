@@ -22,10 +22,10 @@
 #include "IndexManager.h"
 #include "SearchManager.h"
 
-#include "../client/CID.h"
-#include "../client/LogManager.h"
-#include "../client/ShareManager.h"
-#include "../client/TimerManager.h"
+#include <client/CID.h>
+#include <client/LogManager.h>
+#include <client/ShareManager.h>
+#include <client/TimerManager.h>
 
 namespace dht
 {

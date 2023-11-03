@@ -23,8 +23,8 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/SettingsManager.h"
-#include "../client/ResourceManager.h"
+#include <client/SettingsManager.h>
+#include <client/ResourceManager.h>
 
 #include "WinUtil.h"
 #include "Resource.h"

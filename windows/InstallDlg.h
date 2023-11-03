@@ -24,7 +24,7 @@
 #endif // _MSC_VER > 1000
 
 #include "WinUtil.h"
-#include "../client/version.h"
+#include <client/version.h>
 #include <atlctrlx.h>
 
 class InstallDlg : public CDialogImpl<InstallDlg>

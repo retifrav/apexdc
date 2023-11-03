@@ -22,10 +22,10 @@
 #include "Constants.h"
 #include "KBucket.h"
 
-#include "../client/ShareManager.h"
-#include "../client/Singleton.h"
+#include <client/ShareManager.h>
+#include <client/Singleton.h>
 
-#include "../client/atomic.h"
+#include <client/atomic.h>
 
 namespace dht
 {

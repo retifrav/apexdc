@@ -19,9 +19,9 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/SettingsManager.h"
-#include "../client/LogManager.h"
-#include "../client/File.h"
+#include <client/SettingsManager.h>
+#include <client/LogManager.h>
+#include <client/File.h>
 
 #include "LogPage.h"
 #include "WinUtil.h"

@@ -2,8 +2,8 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/SettingsManager.h"
-#include "../client/SimpleXML.h"
+#include <client/SettingsManager.h>
+#include <client/SimpleXML.h>
 
 #include "PropPageTextStyles.h"
 #include "WinUtil.h"

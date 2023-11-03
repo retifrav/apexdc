@@ -26,9 +26,9 @@
 #include "FlatTabCtrl.h"
 #include "TypedListViewCtrl.h"
 
-#include "../client/QueueManager.h"
-#include "../client/FastAlloc.h"
-#include "../client/TaskQueue.h"
+#include <client/QueueManager.h>
+#include <client/FastAlloc.h>
+#include <client/TaskQueue.h>
 
 #define SHOWTREE_MESSAGE_MAP 12
 

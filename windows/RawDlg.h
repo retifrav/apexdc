@@ -23,7 +23,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/Util.h"
+#include <client/Util.h>
 
 class RawDlg : public CDialogImpl<RawDlg>
 {

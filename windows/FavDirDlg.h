@@ -6,7 +6,7 @@
 #endif // _MSC_VER > 1000
 
 #include <wtl/atlcrack.h>
-#include "../client/Util.h"
+#include <client/Util.h>
 
 class FavDirDlg : public CDialogImpl<FavDirDlg>
 {

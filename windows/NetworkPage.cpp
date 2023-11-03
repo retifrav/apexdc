@@ -19,8 +19,8 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/SettingsManager.h"
-#include "../client/Socket.h"
+#include <client/SettingsManager.h>
+#include <client/Socket.h>
 
 #include "NetworkPage.h"
 #include "WinUtil.h"

@@ -19,8 +19,8 @@
 #ifndef EMOTICONSMANAGER_H
 #define EMOTICONSMANAGER_H
 
-#include "../client/FastAlloc.h"
-#include "../client/Util.h"
+#include <client/FastAlloc.h>
+#include <client/Util.h>
 
 #include "ResourceLoader.h"
 

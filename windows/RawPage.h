@@ -19,7 +19,7 @@
 #ifndef RAWPAGE_H
 #define RAWPAGE_H
 
-#include "../client/RawManager.h"
+#include <client/RawManager.h>
 
 #include <wtl/atlcrack.h>
 #include "PropPage.h"

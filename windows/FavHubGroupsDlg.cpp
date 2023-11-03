@@ -18,7 +18,7 @@
 
 #include "stdafx.h"
 
-#include "../client/FavoriteManager.h"
+#include <client/FavoriteManager.h>
 
 #include "FavHubGroupsDlg.h"
 #include "WinUtil.h"

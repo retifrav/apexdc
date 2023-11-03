@@ -19,7 +19,7 @@
 #ifndef DCPLUSPLUS_WIN32_MAPPER_NATPMP_H
 #define DCPLUSPLUS_WIN32_MAPPER_NATPMP_H
 
-#include "../client/Mapper.h"
+#include <client/Mapper.h>
 
 class Mapper_NATPMP : public Mapper
 {

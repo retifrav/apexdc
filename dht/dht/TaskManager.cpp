@@ -24,9 +24,9 @@
 #include "TaskManager.h"
 #include "Utils.h"
 
-#include "../client/SettingsManager.h"
-#include "../client/ShareManager.h"
-#include "../client/TimerManager.h"
+#include <client/SettingsManager.h>
+#include <client/ShareManager.h>
+#include <client/TimerManager.h>
 
 namespace dht
 {

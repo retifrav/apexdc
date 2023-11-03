@@ -35,7 +35,7 @@
 #include "AdcHub.h"
 #include "nmdchub.h"
 
-#include "../dht/DHT.h"
+#include <dht/DHT.h>
 
 namespace dcpp {
 

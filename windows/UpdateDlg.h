@@ -23,7 +23,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/UpdateManager.h"
+#include <client/UpdateManager.h>
 
 class UpdateDlg : public CDialogImpl<UpdateDlg> 
 {

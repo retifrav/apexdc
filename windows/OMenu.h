@@ -19,7 +19,7 @@
 #ifndef __OMENU_H
 #define __OMENU_H
 
-#include "../client/typedefs.h"
+#include <client/typedefs.h>
 
 namespace dcpp {
 

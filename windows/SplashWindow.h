@@ -25,8 +25,8 @@
 
 #include <string>
 
-#include "../client/typedefs.h"
-#include "../client/version.h"
+#include <client/typedefs.h>
+#include <client/version.h>
 
 #include "ResourceLoader.h"
 

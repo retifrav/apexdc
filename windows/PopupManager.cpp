@@ -18,8 +18,8 @@
 
 #include "stdafx.h"
 
-#include "../client/SettingsManager.h"
-#include "../client/Util.h"
+#include <client/SettingsManager.h>
+#include <client/Util.h>
 
 #include "WinUtil.h"
 #include "PopupManager.h"

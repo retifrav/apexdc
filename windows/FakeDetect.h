@@ -27,7 +27,7 @@
 #include "PropPage.h"
 #include "ExListViewCtrl.h"
 
-#include "../client/RawManager.h"
+#include <client/RawManager.h>
 
 class FakeDetect : public CPropertyPage<IDD_FAKEDETECT>, public PropPage, protected RawSelector
 {

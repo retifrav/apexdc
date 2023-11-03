@@ -30,9 +30,9 @@
 //#include <vld.h>
 #endif
 
-#include "../client/DCPlusPlus.h"
-#include "../client/MerkleTree.h"
-#include "../client/MappingManager.h"
+#include <client/DCPlusPlus.h>
+#include <client/MerkleTree.h>
+#include <client/MappingManager.h>
 
 #include "SingleInstance.h"
 #include "WinUtil.h"
@@ -82,7 +82,7 @@ PfnDliHook __pfnDliFailureHook2 = FailHook;
 
 #endif
 
-#include "../client/SSLSocket.h"
+#include <client/SSLSocket.h>
 
 string getExceptionName(DWORD code) {
 	switch(code)

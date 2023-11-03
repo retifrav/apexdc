@@ -1,4 +1,4 @@
-#include "../client/RawManager.h"
+#include <client/RawManager.h>
 
 #ifndef CHANGE_RAW_CHEAT_DLG_H
 #define CHANGE_RAW_CHEAT_DLG_H

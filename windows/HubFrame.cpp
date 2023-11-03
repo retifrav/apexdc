@@ -28,21 +28,21 @@
 #include "BarShader.h"
 #include "WinUtil.h"
 
-#include "../client/ChatMessage.h"
-#include "../client/QueueManager.h"
-#include "../client/ShareManager.h"
-#include "../client/Util.h"
-#include "../client/StringTokenizer.h"
-#include "../client/FavoriteManager.h"
-#include "../client/LogManager.h"
-#include "../client/AdcCommand.h"
-#include "../client/SettingsManager.h"
+#include <client/ChatMessage.h>
+#include <client/QueueManager.h>
+#include <client/ShareManager.h>
+#include <client/Util.h>
+#include <client/StringTokenizer.h>
+#include <client/FavoriteManager.h>
+#include <client/LogManager.h>
+#include <client/AdcCommand.h>
+#include <client/SettingsManager.h>
 #include "../client/ConnectionManager.h" 
-#include "../client/NmdcHub.h"
-#include "../client/RegEx.h"
-#include "../client/DetectionEntry.h"
-#include "../client/PluginManager.h"
-#include "../client/UpdateManager.h"
+#include <client/NmdcHub.h>
+#include <client/RegEx.h>
+#include <client/DetectionEntry.h>
+#include <client/PluginManager.h>
+#include <client/UpdateManager.h>
 
 HubFrame::FrameMap HubFrame::frames;
 

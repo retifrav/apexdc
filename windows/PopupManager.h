@@ -25,8 +25,8 @@
 
 #include "stdafx.h"
 
-#include "../client/Singleton.h"
-#include "../client/TimerManager.h"
+#include <client/Singleton.h>
+#include <client/TimerManager.h>
 
 #include "PopupDlg.h"
 #include "WinUtil.h"

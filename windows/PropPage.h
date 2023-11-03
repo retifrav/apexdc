@@ -28,7 +28,7 @@
 #define SETTINGS_BUF_LEN 1024
 #define DIM_EDIT_EXPERIMENT 0
 
-#include "../client/ResourceManager.h"
+#include <client/ResourceManager.h>
 
 class PropPage
 {

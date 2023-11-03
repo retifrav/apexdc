@@ -28,7 +28,7 @@
 #include "ExListViewCtrl.h"
 #include "WinUtil.h"
 #include "FolderTree.h"
-#include "../client/SettingsManager.h"
+#include <client/SettingsManager.h>
 
 class SharePage : public CPropertyPage<IDD_SHAREPAGE>, public PropPage
 {

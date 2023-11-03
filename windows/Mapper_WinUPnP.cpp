@@ -20,8 +20,8 @@
 
 #include "Mapper_WinUPnP.h"
 
-#include "../client/Util.h"
-#include "../client/Text.h"
+#include <client/Util.h>
+#include <client/Text.h>
 
 #include <ole2.h>
 

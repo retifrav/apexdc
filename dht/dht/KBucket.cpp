@@ -23,7 +23,7 @@
 #include "KBucket.h"
 #include "Utils.h"
 
-#include "../client/ClientManager.h"
+#include <client/ClientManager.h>
 
 namespace dht
 {

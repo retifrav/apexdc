@@ -22,9 +22,9 @@
 #include "Constants.h"
 #include "KBucket.h"
 
-#include "../client/CID.h"
-#include "../client/HttpManagerListener.h"
-#include "../client/Singleton.h"
+#include <client/CID.h>
+#include <client/HttpManagerListener.h>
+#include <client/Singleton.h>
 
 namespace dht
 {

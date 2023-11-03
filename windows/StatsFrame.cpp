@@ -19,7 +19,7 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/Socket.h"
+#include <client/Socket.h>
 
 #include "StatsFrame.h"
 #include "WinUtil.h"

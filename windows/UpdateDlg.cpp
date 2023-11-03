@@ -19,9 +19,9 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/Util.h"
-#include "../client/SimpleXML.h"
-#include "../client/version.h"
+#include <client/Util.h>
+#include <client/SimpleXML.h>
+#include <client/version.h>
 
 #include "UpdateDlg.h"
 #include "WinUtil.h"

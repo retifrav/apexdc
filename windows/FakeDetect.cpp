@@ -19,7 +19,7 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/SettingsManager.h"
+#include <client/SettingsManager.h>
 
 #include "FakeDetect.h"
 #include "WinUtil.h"

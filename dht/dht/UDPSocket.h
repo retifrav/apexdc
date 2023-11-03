@@ -21,13 +21,13 @@
 
 #include <deque>
 
-#include "../client/forward.h"
-#include "../client/typedefs.h"
+#include <client/forward.h>
+#include <client/typedefs.h>
 
-#include "../client/CID.h"
-#include "../client/FastAlloc.h"
-#include "../client/MerkleTree.h"
-#include "../client/Thread.h"
+#include <client/CID.h>
+#include <client/FastAlloc.h>
+#include <client/MerkleTree.h>
+#include <client/Thread.h>
 
 namespace dht
 {

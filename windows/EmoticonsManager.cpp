@@ -18,10 +18,10 @@
 
 #include "stdafx.h"
 
-#include "../client/SettingsManager.h"
-#include "../client/SimpleXML.h"
-#include "../client/Pointer.h"
-#include "../client/File.h"
+#include <client/SettingsManager.h>
+#include <client/SimpleXML.h>
+#include <client/Pointer.h>
+#include <client/File.h>
 
 #include "EmoticonsManager.h"
 #include <cmath>

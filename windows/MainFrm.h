@@ -23,20 +23,20 @@
 #pragma once
 #endif // _MSC_VER >= 1000
 
-#include "../client/TimerManager.h"
-#include "../client/FavoriteManager.h"
-#include "../client/QueueManagerListener.h"
-#include "../client/Util.h"
-#include "../client/LogManager.h"
-#include "../client/version.h"
-#include "../client/Client.h"
-#include "../client/ShareManager.h"
-#include "../client/DownloadManager.h"
-#include "../client/SettingsManager.h"
-#include "../client/WebServerManager.h"
-#include "../client/AdlSearch.h"
-#include "../client/UpdateManager.h"
-#include "../client/HashCalc.h"
+#include <client/TimerManager.h>
+#include <client/FavoriteManager.h>
+#include <client/QueueManagerListener.h>
+#include <client/Util.h>
+#include <client/LogManager.h>
+#include <client/version.h>
+#include <client/Client.h>
+#include <client/ShareManager.h>
+#include <client/DownloadManager.h>
+#include <client/SettingsManager.h>
+#include <client/WebServerManager.h>
+#include <client/AdlSearch.h>
+#include <client/UpdateManager.h>
+#include <client/HashCalc.h>
 
 #include "PopupManager.h"
 

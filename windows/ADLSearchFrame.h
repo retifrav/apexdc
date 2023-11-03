@@ -32,7 +32,7 @@
 #include "ExListViewCtrl.h"
 #include "WinUtil.h"
 
-#include "../client/ADLSearch.h"
+#include <client/ADLSearch.h>
 
 ///////////////////////////////////////////////////////////////////////////////
 //

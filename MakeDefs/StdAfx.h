@@ -21,10 +21,10 @@
 #endif
 
 
-#include "../client/compiler.h"
+#include <client/compiler.h>
 
 #ifdef _WIN32
-#include "../client/w.h"
+#include <client/w.h>
 #define BOOST_USE_WINDOWS_H 1
 #endif
 

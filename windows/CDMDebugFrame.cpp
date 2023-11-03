@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/File.h"
+#include <client/File.h>
 
 #include "CDMDebugFrame.h"
 #include "WinUtil.h"

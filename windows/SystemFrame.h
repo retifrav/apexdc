@@ -26,8 +26,8 @@
 #include "FlatTabCtrl.h"
 #include "ExListViewCtrl.h"
 
-#include "../client/Text.h"
-#include "../client/LogManager.h"
+#include <client/Text.h>
+#include <client/LogManager.h>
 
 class SystemFrame : public MDITabChildWindowImpl<SystemFrame, RGB(0, 0, 0), IDR_NOTEPAD>, public StaticFrame<SystemFrame, ResourceManager::SYSTEM_LOG>,
 	private LogManagerListener, private SettingsManagerListener

@@ -141,8 +141,8 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
         OpenSSL::Crypto
         boost
         wtl
-        dht
         client
+        dht
 )
 
 # <AdditionalOptions>/FIXED:NO /SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>

@@ -51,22 +51,22 @@
 #include "ExMessageBox.h"
 #include "BetaDlg.h"
 
-#include "../client/ConnectionManager.h"
-#include "../client/ConnectivityManager.h"
-#include "../client/DownloadManager.h"
-#include "../client/HashManager.h"
-#include "../client/UploadManager.h"
-#include "../client/StringTokenizer.h"
-#include "../client/SimpleXML.h"
-#include "../client/ShareManager.h"
-#include "../client/LogManager.h"
-#include "../client/WebServerManager.h"
-#include "../client/Thread.h"
-#include "../client/ThrottleManager.h"
-#include "../client/MappingManager.h"
-#include "../client/PluginManager.h"
+#include <client/ConnectionManager.h>
+#include <client/ConnectivityManager.h>
+#include <client/DownloadManager.h>
+#include <client/HashManager.h>
+#include <client/UploadManager.h>
+#include <client/StringTokenizer.h>
+#include <client/SimpleXML.h>
+#include <client/ShareManager.h>
+#include <client/LogManager.h>
+#include <client/WebServerManager.h>
+#include <client/Thread.h>
+#include <client/ThrottleManager.h>
+#include <client/MappingManager.h>
+#include <client/PluginManager.h>
 
-#include "../dht/dht.h"
+#include <dht/dht.h>
 
 MainFrame* MainFrame::anyMF = NULL;
 bool MainFrame::bShutdown = false;

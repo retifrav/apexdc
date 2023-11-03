@@ -24,7 +24,7 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/typedefs.h"
+#include <client/typedefs.h>
 
 #include "ShellContextMenu.h"
 

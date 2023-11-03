@@ -24,7 +24,7 @@
 #endif // _MSC_VER > 1000
 
 #include <atlctrlx.h>
-#include "../client/typedefs.h"
+#include <client/typedefs.h>
 
 class HashToolDlg : public CDialogImpl<HashToolDlg>
 {

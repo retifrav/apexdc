@@ -28,13 +28,13 @@
 #include "ChatCtrl.h"
 #include "EmoticonsDlg.h"
 
-#include "../client/Client.h"
-#include "../client/User.h"
-#include "../client/ClientManager.h"
-#include "../client/TimerManager.h"
-#include "../client/FastAlloc.h"
-#include "../client/DirectoryListing.h"
-#include "../client/TaskQueue.h"
+#include <client/Client.h>
+#include <client/User.h>
+#include <client/ClientManager.h>
+#include <client/TimerManager.h>
+#include <client/FastAlloc.h>
+#include <client/DirectoryListing.h>
+#include <client/TaskQueue.h>
 
 #include "WinUtil.h"
 #include "UCHandler.h"

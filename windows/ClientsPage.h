@@ -8,11 +8,11 @@
 #include "PropPage.h"
 #include "ExListViewCtrl.h"
 
-#include "../client/DetectionEntry.h"
-#include "../client/HttpConnection.h"
-#include "../client/HttpManager.h"
-#include "../client/File.h"
-#include "../client/DetectionManager.h"
+#include <client/DetectionEntry.h>
+#include <client/HttpConnection.h>
+#include <client/HttpManager.h>
+#include <client/File.h>
+#include <client/DetectionManager.h>
 
 class ClientsPage : public CPropertyPage<IDD_DETECTION_LIST_PAGE>, public PropPage {
 public:

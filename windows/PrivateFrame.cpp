@@ -25,16 +25,16 @@
 #include "EmoticonsManager.h"
 #include "TextFrame.h"
 
-#include "../client/Client.h"
-#include "../client/ClientManager.h"
-#include "../client/Util.h"
-#include "../client/LogManager.h"
-#include "../client/UploadManager.h"
-#include "../client/ShareManager.h"
-#include "../client/FavoriteManager.h"
-#include "../client/QueueManager.h"
-#include "../client/StringTokenizer.h"
-#include "../client/PluginManager.h"
+#include <client/Client.h>
+#include <client/ClientManager.h>
+#include <client/Util.h>
+#include <client/LogManager.h>
+#include <client/UploadManager.h>
+#include <client/ShareManager.h>
+#include <client/FavoriteManager.h>
+#include <client/QueueManager.h>
+#include <client/StringTokenizer.h>
+#include <client/PluginManager.h>
 
 PrivateFrame::FrameMap PrivateFrame::frames;
 tstring pSelectedLine = Util::emptyStringT;

@@ -23,7 +23,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/HashManager.h"
+#include <client/HashManager.h>
 
 class HashProgressDlg : public CDialogImpl<HashProgressDlg>
 {

@@ -24,12 +24,12 @@
 #include "KBucket.h"
 #include "UDPSocket.h"
 
-#include "../client/AdcCommand.h"
-#include "../client/CID.h"
-#include "../client/MerkleTree.h"
-#include "../client/Singleton.h"
-#include "../client/TimerManager.h"
-#include "../client/SettingsManager.h"
+#include <client/AdcCommand.h>
+#include <client/CID.h>
+#include <client/MerkleTree.h>
+#include <client/Singleton.h>
+#include <client/TimerManager.h>
+#include <client/SettingsManager.h>
 
 namespace dht
 {

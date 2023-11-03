@@ -21,8 +21,8 @@
 
 #include "KBucket.h"
 
-#include "../client/Singleton.h"
-#include "../client/User.h"
+#include <client/Singleton.h>
+#include <client/User.h>
 
 namespace dht
 {

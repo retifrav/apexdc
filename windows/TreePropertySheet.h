@@ -24,7 +24,7 @@
 #endif // _MSC_VER > 1000
 
 #include "Resource.h"
-#include "../client/SettingsManager.h"
+#include <client/SettingsManager.h>
 
 class TreePropertySheet : public CPropertySheetImpl<TreePropertySheet> {
 public:

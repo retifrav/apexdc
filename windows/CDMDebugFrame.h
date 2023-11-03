@@ -16,8 +16,8 @@
 #include "FlatTabCtrl.h"
 #include "WinUtil.h"
 
-#include "../client/DebugManager.h"
-#include "../client/Semaphore.h"
+#include <client/DebugManager.h>
+#include <client/Semaphore.h>
 
 class CDMDebugFrame : private DebugManagerListener, public Thread,
 	public MDITabChildWindowImpl<CDMDebugFrame, RGB(0, 0, 0), IDR_CDM>,

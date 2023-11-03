@@ -19,12 +19,12 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/SettingsManager.h"
-#include "../client/FavoriteManager.h"
-#include "../client/CryptoManager.h"
+#include <client/SettingsManager.h>
+#include <client/FavoriteManager.h>
+#include <client/CryptoManager.h>
 
-#include "../client/HashCalc.h"
-#include "../client/version.h"
+#include <client/HashCalc.h>
+#include <client/version.h>
 
 #include "CertificatesPage.h"
 #include "LineDlg.h"

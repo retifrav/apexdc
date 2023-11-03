@@ -5,16 +5,16 @@ project("dht")
 add_library(${PROJECT_NAME})
 
 set(sources
-    BootstrapManager.cpp
-    ConnectionManager.cpp
-    DHT.cpp
-    IndexManager.cpp
-    KBucket.cpp
-    SearchManager.cpp
-    stdafx.cpp
-    TaskManager.cpp
-    UDPSocket.cpp
-    Utils.cpp
+    dht/BootstrapManager.cpp
+    dht/ConnectionManager.cpp
+    dht/DHT.cpp
+    dht/IndexManager.cpp
+    dht/KBucket.cpp
+    dht/SearchManager.cpp
+    dht/stdafx.cpp
+    dht/TaskManager.cpp
+    dht/UDPSocket.cpp
+    dht/Utils.cpp
 )
 target_sources(${PROJECT_NAME}
     PRIVATE
@@ -23,6 +23,8 @@ target_sources(${PROJECT_NAME}
 
 # <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\boost;$(SolutionDir)\openssl\include;$(SolutionDir)\bzip2;$(SolutionDir)\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 target_include_directories(${PROJECT_NAME}
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/dht
     PUBLIC
         # where top-level project will look for the library's public headers
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
@@ -38,7 +40,9 @@ target_compile_definitions(${PROJECT_NAME}
         "HAS_PCH"
 )
 
-# target_link_libraries(${PROJECT_NAME}
-#     PRIVATE
-#         zlib
-# )
+target_link_libraries(${PROJECT_NAME}
+    PRIVATE
+        boost
+        bzip2
+        client # dht needs client, and client needs dht, isn't it great
+)

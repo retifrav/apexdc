@@ -19,9 +19,9 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/ResourceManager.h"
-#include "../client/UserCommand.h"
-#include "../client/NmdcHub.h"
+#include <client/ResourceManager.h>
+#include <client/UserCommand.h>
+#include <client/NmdcHub.h>
 
 #include "WinUtil.h"
 #include "CommandDlg.h"

@@ -26,7 +26,7 @@
 #include <wtl/atlcrack.h>
 #include "PropPage.h"
 
-#include "../client/SettingsManager.h"
+#include <client/SettingsManager.h>
 
 class UploadPage : public CPropertyPage<IDD_UPLOADPAGE>, public PropPage
 {

@@ -19,7 +19,7 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/ClientManager.h"
+#include <client/ClientManager.h>
 
 #include "RecentsFrm.h"
 #include "HubFrame.h"

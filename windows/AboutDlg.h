@@ -23,9 +23,9 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/HttpConnection.h"
-#include "../client/HttpManager.h"
-#include "../client/SimpleXML.h"
+#include <client/HttpConnection.h>
+#include <client/HttpManager.h>
+#include <client/SimpleXML.h>
 
 #include <atlctrlx.h>
 

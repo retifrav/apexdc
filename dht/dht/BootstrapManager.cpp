@@ -25,12 +25,12 @@
 
 #include <boost/scoped_array.hpp>
 
-#include "../client/AdcCommand.h"
-#include "../client/ClientManager.h"
-#include "../client/HttpManager.h"
-#include "../client/LogManager.h"
-#include "../client/version.h"
-#include "../zlib/zlib.h"
+#include <client/AdcCommand.h>
+#include <client/ClientManager.h>
+#include <client/HttpManager.h>
+#include <client/LogManager.h>
+#include <client/version.h>
+#include <zlib/zlib.h>
 
 namespace dht
 {

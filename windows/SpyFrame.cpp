@@ -19,9 +19,9 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/ShareManager.h"
-#include "../client/ResourceManager.h"
-#include "../client/ConnectionManager.h"
+#include <client/ShareManager.h>
+#include <client/ResourceManager.h>
+#include <client/ConnectionManager.h>
 
 #include "SpyFrame.h"
 #include "SearchFrm.h"

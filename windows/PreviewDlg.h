@@ -19,7 +19,7 @@
 #pragma once
 
 #include <wtl/atlcrack.h>
-#include "../client/Util.h"
+#include <client/Util.h>
 
 class PreviewDlg : public CDialogImpl<PreviewDlg> {
 	CEdit ctrlName;

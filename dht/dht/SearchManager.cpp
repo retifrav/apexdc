@@ -24,10 +24,10 @@
 #include "IndexManager.h"
 #include "Utils.h"
 
-#include "../client/ClientManager.h"
-#include "../client/SearchManager.h"
-#include "../client/SearchResult.h"
-#include "../client/SimpleXML.h"
+#include <client/ClientManager.h>
+#include <client/SearchManager.h>
+#include <client/SearchResult.h>
+#include <client/SimpleXML.h>
 
 namespace dht
 {

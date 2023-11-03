@@ -1,0 +1,1 @@
+#define NO_VERSION_CONTROL 1

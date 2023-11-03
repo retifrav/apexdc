@@ -3,7 +3,7 @@
 
 #include <cmath>
 
-#include "../client/StringTokenizer.h"
+#include <client/StringTokenizer.h>
 
 #include "MainFrm.h"
 

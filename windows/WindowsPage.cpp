@@ -19,8 +19,8 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/SettingsManager.h"
-#include "../client/FavoriteManager.h"
+#include <client/SettingsManager.h>
+#include <client/FavoriteManager.h>
 
 #include "WindowsPage.h"
 #include "WinUtil.h"

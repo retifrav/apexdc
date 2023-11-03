@@ -19,7 +19,7 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/SettingsManager.h"
+#include <client/SettingsManager.h>
 
 #include "Popups.h"
 #include "WinUtil.h"

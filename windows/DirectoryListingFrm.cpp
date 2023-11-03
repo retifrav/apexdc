@@ -25,14 +25,14 @@
 #include "PrivateFrame.h"
 #include "BarShader.h"
 
-#include "../client/File.h"
-#include "../client/QueueManager.h"
-#include "../client/StringTokenizer.h"
-#include "../client/ADLSearch.h"
-#include "../client/MerkleTree.h"
-#include "../client/User.h"
-#include "../client/ClientManager.h"
-#include "../client/ShareManager.h"
+#include <client/File.h>
+#include <client/QueueManager.h>
+#include <client/StringTokenizer.h>
+#include <client/ADLSearch.h>
+#include <client/MerkleTree.h>
+#include <client/User.h>
+#include <client/ClientManager.h>
+#include <client/ShareManager.h>
 
 DirectoryListingFrame::FrameMap DirectoryListingFrame::frames;
 int DirectoryListingFrame::columnIndexes[] = { COLUMN_FILENAME, COLUMN_TYPE, COLUMN_EXACTSIZE, COLUMN_SIZE, COLUMN_TTH };

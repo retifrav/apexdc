@@ -30,7 +30,7 @@
 #include "SearchManager.h"
 #include "StringTokenizer.h"
 
-#include "../dht/DHT.h"
+#include <dht/DHT.h>
 
 namespace dcpp {
 

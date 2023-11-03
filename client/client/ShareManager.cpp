@@ -40,7 +40,7 @@
 #include "UserConnection.h"
 #include "version.h"
 
-#include "../dht/IndexManager.h"
+#include <dht/IndexManager.h>
 
 #ifdef _WIN32
 #include "w.h"

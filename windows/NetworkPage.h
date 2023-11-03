@@ -27,9 +27,9 @@
 #include "PropPage.h"
 #include <atlctrlx.h>
 
-#include "../client/UpdateManager.h"
-#include "../client/SimpleXML.h"
-#include "../client/version.h"
+#include <client/UpdateManager.h>
+#include <client/SimpleXML.h>
+#include <client/version.h>
 
 class NetworkPage : public CPropertyPage<IDD_NETWORKPAGE>, public PropPage, private UpdateListener
 {

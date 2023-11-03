@@ -25,13 +25,13 @@
 
 #include <boost/scoped_array.hpp>
 
-#include "../client/AdcCommand.h"
-#include "../client/Socket.h"
-#include "../client/ClientManager.h"
-#include "../client/LogManager.h"
-#include "../client/SettingsManager.h"
+#include <client/AdcCommand.h>
+#include <client/Socket.h>
+#include <client/ClientManager.h>
+#include <client/LogManager.h>
+#include <client/SettingsManager.h>
 
-#include "../zlib/zlib.h"
+#include <zlib/zlib.h>
 
 #include <openssl/rc4.h>
 

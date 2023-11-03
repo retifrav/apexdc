@@ -20,7 +20,7 @@
 
 #include "Mapper_NATPMP.h"
 
-#include "../client/Util.h"
+#include <client/Util.h>
 
 extern "C" {
 #ifndef STATICLIB

@@ -23,9 +23,9 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/User.h"
-#include "../client/ClientManagerListener.h"
-#include "../client/ResourceManager.h"
+#include <client/User.h>
+#include <client/ClientManagerListener.h>
+#include <client/ResourceManager.h>
 
 #include "FlatTabCtrl.h"
 #include "WinUtil.h"

@@ -21,13 +21,13 @@
 
 #include "Constants.h"
 
-#include "../client/CID.h"
-#include "../client/Client.h"
-#include "../client/MerkleTree.h"
-#include "../client/Pointer.h"
-#include "../client/SimpleXML.h"
-#include "../client/TimerManager.h"
-#include "../client/User.h"
+#include <client/CID.h>
+#include <client/Client.h>
+#include <client/MerkleTree.h>
+#include <client/Pointer.h>
+#include <client/SimpleXML.h>
+#include <client/TimerManager.h>
+#include <client/User.h>
 
 namespace dht
 {

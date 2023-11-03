@@ -23,17 +23,17 @@
 #pragma once
 #endif // _MSC_VER >= 1000
 
-#include "../client/User.h"
-#include "../client/FastAlloc.h"
+#include <client/User.h>
+#include <client/FastAlloc.h>
 
 #include "FlatTabCtrl.h"
 #include "TypedListViewCtrl.h"
 #include "WinUtil.h"
 #include "UCHandler.h"
 
-#include "../client/DirectoryListing.h"
-#include "../client/StringSearch.h"
-#include "../client/ADLSearch.h"
+#include <client/DirectoryListing.h>
+#include <client/StringSearch.h>
+#include <client/ADLSearch.h>
 
 #include <atlsplit.h>
 

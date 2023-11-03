@@ -23,11 +23,11 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "../client/Util.h"
-#include "../client/SettingsManager.h"
-#include "../client/User.h"
-#include "../client/HintedUser.h"
-#include "../client/UserInfoBase.h"
+#include <client/Util.h>
+#include <client/SettingsManager.h>
+#include <client/User.h>
+#include <client/HintedUser.h>
+#include <client/UserInfoBase.h>
 
 #include <boost/bind.hpp>
 

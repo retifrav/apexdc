@@ -19,8 +19,8 @@
 #include "stdafx.h"
 #include "Resource.h"
 
-#include "../client/ADLSearch.h"
-#include "../client/FavoriteManager.h"
+#include <client/ADLSearch.h>
+#include <client/FavoriteManager.h>
 
 #include "ADLSProperties.h"
 #include "WinUtil.h"

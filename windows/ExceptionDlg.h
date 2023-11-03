@@ -7,7 +7,7 @@
 
 #include "WinUtil.h"
 
-#include "../client/ResourceManager.h"
+#include <client/ResourceManager.h>
 
 class CExceptionDlg : public CDialogImpl<CExceptionDlg>
 {
