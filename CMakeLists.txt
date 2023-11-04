@@ -133,6 +133,8 @@ target_compile_definitions(${CMAKE_PROJECT_NAME}
 
 find_package(minizip CONFIG REQUIRED)
 find_package(OpenSSL REQUIRED)
+find_package(miniupnpc CONFIG REQUIRED)
+find_package(natpmp CONFIG REQUIRED)
 find_package(wtl CONFIG REQUIRED)
 find_package(zlib CONFIG REQUIRED)
 
@@ -160,6 +162,8 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
         ${WS2_32_LIBRARY_PATH}
         ${WinMM_LIBRARY_PATH}
         ${powrprof_LIBRARY_PATH}
+        miniupnpc::miniupnpc
+        natpmp
 )
 
 # <AdditionalOptions>/FIXED:NO /SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>

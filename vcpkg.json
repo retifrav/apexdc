@@ -10,6 +10,8 @@
                 "bzip2"
             ]
         },
+        "miniupnpc",
+        "natpmp",
         "openssl",
         "wtl",
         "zlib"
@@ -23,6 +25,14 @@
         {
             "name": "minizip",
             "version": "1.2.12"
+        },
+        {
+            "name": "miniupnpc",
+            "version": "2.2.5"
+        },
+        {
+            "name": "natpmp",
+            "version": "2023.6.18"
         },
         {
             "name": "openssl",

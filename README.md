@@ -126,8 +126,8 @@ and disable Pre-Build Event in `MakeDefs` project properties:
 2. [ ] stop vendoring dependencies, use vcpkg instead
     - [ ] [boost](https://boost.org)
     - [x] [bzip2](https://sourceware.org/bzip2/)
-    - [ ] [MiniUPnP](http://miniupnp.free.fr)
-    - [ ] [natpmp](http://miniupnp.free.fr/libnatpmp.html)
+    - [x] [MiniUPnP](http://miniupnp.free.fr)
+    - [x] [NAT-PMP](http://miniupnp.free.fr/libnatpmp.html)
     - [x] [OpenSSL](https://openssl.org)
     - [x] [WTL](https://sourceforge.net/projects/wtl/)
     - [x] [zlib](http://zlib.net)
