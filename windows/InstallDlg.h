@@ -25,7 +25,7 @@
 
 #include "WinUtil.h"
 #include <client/version.h>
-#include <atlctrlx.h>
+#include <wtl/atlctrlx.h>
 
 class InstallDlg : public CDialogImpl<InstallDlg>
 {

@@ -5,8 +5,7 @@ This is a modified mirror/fork of [ApexDC++](https://apexdc.net) project sources
 <!-- MarkdownTOC -->
 
 - [Why mirror/fork](#why-mirrorfork)
-- [Repository rituals](#repository-rituals)
-    - [Syncing with original sources](#syncing-with-original-sources)
+- [Syncing with original sources](#syncing-with-original-sources)
 - [How to build](#how-to-build)
     - [With CMake](#with-cmake)
     - [With Visual Studio / MSBuild](#with-visual-studio--msbuild)
@@ -27,27 +26,17 @@ The point of creating this repository was to:
 
 The original sources are obtained from [release archives](https://sourceforge.net/projects/apexdc/files/ApexDC%2B%2B/).
 
-## Repository rituals
+## Syncing with original sources
 
-Original sources contain `gitconfig.sh` script, which essentially does the following:
-
-``` sh
-$ git config --local core.autocrlf false
-$ git config --local core.ignorecase false
-
-$ git config --local filter.utf16win.clean "iconv -sc -f utf-16le -t utf-8"
-$ git config --local filter.utf16win.smudge "iconv -sc -f utf-8 -t utf-16le"
-$ git config --local filter.utf16win.required true
-```
-
-And then it removes everything from the working folder and resets it with `git reset --hard`.
-
-Not sure if this steps are actually required though. Certainly `autocrlf` shouldn't be set to `false`, and actually files should be converted to Unix line endings.
-
-### Syncing with original sources
+Before syncing with a newer version from upstream/original sources, first remove executable attribute from the new files:
 
 ``` sh
 $ find . -type f -print0 | xargs -0 chmod 0664
+```
+
+and then convert line endings to Unix style:
+
+``` sh
 $ find . -type f -print0 | xargs -0 dos2unix
 ```
 

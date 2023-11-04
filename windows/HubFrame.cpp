@@ -37,7 +37,7 @@
 #include <client/LogManager.h>
 #include <client/AdcCommand.h>
 #include <client/SettingsManager.h>
-#include "../client/ConnectionManager.h" 
+#include <client/ConnectionManager.h>
 #include <client/NmdcHub.h>
 #include <client/RegEx.h>
 #include <client/DetectionEntry.h>

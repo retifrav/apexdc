@@ -25,7 +25,7 @@
 
 #include <wtl/atlcrack.h>
 #include "PropPage.h"
-#include <atlctrlx.h>
+#include <wtl/atlctrlx.h>
 
 #include <client/UpdateManager.h>
 #include <client/SimpleXML.h>

@@ -22,7 +22,7 @@
 #endif // _MSC_VER > 1000
 
 #include "WinUtil.h"
-#include <atlctrlx.h>
+#include <wtl/atlctrlx.h>
 
 class CheckerPrefDlg : public CDialogImpl<CheckerPrefDlg>
 {

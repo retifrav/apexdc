@@ -23,7 +23,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include <atlctrlx.h>
+#include <wtl/atlctrlx.h>
 #include <client/typedefs.h>
 
 class HashToolDlg : public CDialogImpl<HashToolDlg>

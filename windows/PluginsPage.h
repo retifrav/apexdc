@@ -29,7 +29,7 @@
 #include "ExListViewCtrl.h"
 #include "Resource.h"
 
-#include <atlctrlx.h>
+#include <wtl/atlctrlx.h>
 
 class PluginsPage : public CPropertyPage<IDD_PLUGINSPAGE>, public PropPage
 {

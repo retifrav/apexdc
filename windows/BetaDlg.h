@@ -26,7 +26,7 @@
 #include <client/UpdateManager.h>
 
 #include "WinUtil.h"
-#include <atlctrlx.h>
+#include <wtl/atlctrlx.h>
 
 class BetaDlg : public CDialogImpl<BetaDlg>
 {

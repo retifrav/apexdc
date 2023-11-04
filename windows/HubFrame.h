@@ -40,8 +40,8 @@
 #include "UCHandler.h"
 #include "ResourceLoader.h"
 
-#include <atlctrlx.h>
-#include <atlsplit.h>
+#include <wtl/atlctrlx.h>
+#include <wtl/atlsplit.h>
 
 #define EDIT_MESSAGE_MAP 10		// This could be any number, really...
 #define FILTER_MESSAGE_MAP 8

@@ -14,7 +14,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS YES)
 # global debug postfix for libraries (executables still need to set it)
 set(CMAKE_DEBUG_POSTFIX "d" CACHE STRING "Filename postfix for libraries under DEBUG configuration")
 
-add_executable(${CMAKE_PROJECT_NAME})
+add_executable(${CMAKE_PROJECT_NAME}) # WIN32
 
 set(sources
     windows/ADLSearchFrame.cpp
@@ -104,13 +104,20 @@ target_sources(${CMAKE_PROJECT_NAME}
         ${sources}
 )
 
-# $(SolutionDir);$(SolutionDir)\boost;$(SolutionDir)\openssl\include;$(SolutionDir)\zlib;$(SolutionDir)\bzip2;
-# <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+# VC++ Directories > Include Directories
+#set(CMAKE_VS_SDK_INCLUDE_DIRECTORIES "$(VC_IncludePath);$(WindowsSDK_IncludePath)")
+
+target_precompile_headers(${CMAKE_PROJECT_NAME}
+    PRIVATE
+        windows/stdafx.h
+)
 
 set_target_properties(${CMAKE_PROJECT_NAME}
     PROPERTIES
         DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX}
         MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>"
+        #LINK_FLAGS
+        #    "/NODEFAULTLIB:kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib /DELAYLOAD:oleaut32.dll"
 )
 
 target_compile_definitions(${CMAKE_PROJECT_NAME}
@@ -118,7 +125,7 @@ target_compile_definitions(${CMAKE_PROJECT_NAME}
         "_WIN32_WINNT=0x600"
         "WINVER=0x600"
         "HAVE_NATUPNP_H"
-        #"HAS_PCH"
+        "HAS_PCH"
         "_UNICODE"
         "UNICODE"
         #"NDEBUG"
@@ -133,22 +140,29 @@ add_subdirectory(boost)
 add_subdirectory(dht)
 add_subdirectory(client)
 
+find_library(ShFolder_LIBRARY_PATH ShFolder)
+find_library(WS2_32_LIBRARY_PATH WS2_32)
+find_library(WinMM_LIBRARY_PATH WinMM)
+find_library(powrprof_LIBRARY_PATH powrprof)
+
+message(STATUS "ShFolder_LIBRARY_PATH: ${ShFolder_LIBRARY_PATH}")
+message(STATUS "WS2_32_LIBRARY_PATH: ${WS2_32_LIBRARY_PATH}")
+message(STATUS "WinMM_LIBRARY_PATH: ${WinMM_LIBRARY_PATH}")
+message(STATUS "powrprof_LIBRARY_PATH: ${powrprof_LIBRARY_PATH}")
+
 target_link_libraries(${CMAKE_PROJECT_NAME}
     PRIVATE
-        zlib
-        minizip
-        OpenSSL::SSL
-        OpenSSL::Crypto
         boost
-        wtl
-        client
         dht
+        client
+        wtl
+        ${ShFolder_LIBRARY_PATH}
+        ${WS2_32_LIBRARY_PATH}
+        ${WinMM_LIBRARY_PATH}
+        ${powrprof_LIBRARY_PATH}
 )
 
 # <AdditionalOptions>/FIXED:NO /SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
-# <AdditionalDependencies>SHFolder.lib;ws2_32.lib;winmm.lib;powrprof.lib;%(AdditionalDependencies)</AdditionalDependencies>
-# <IgnoreSpecificDefaultLibraries>kernel32.lib advapi32.lib user32.lib gdi32.lib shell32.lib comdlg32.lib version.lib mpr.lib rasapi32.lib winmm.lib winspool.lib vfw32.lib secur32.lib oleacc.lib oledlg.lib sensapi.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-# <DelayLoadDLLs>oleaut32.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
 
 # <Midl>
 #   <MkTypLibCompatible>true</MkTypLibCompatible>

@@ -35,7 +35,7 @@
 #include <client/StringSearch.h>
 #include <client/ADLSearch.h>
 
-#include <atlsplit.h>
+#include <wtl/atlsplit.h>
 
 class ThreadedDirectoryListing;
 

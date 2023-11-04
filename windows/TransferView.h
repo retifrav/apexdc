@@ -23,15 +23,15 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "..\client\DownloadManagerListener.h"
-#include "..\client\UploadManagerListener.h"
-#include "..\client\ConnectionManagerListener.h"
-#include "..\client\QueueManagerListener.h"
-#include "..\client\TaskQueue.h"
-#include "..\client\forward.h"
-#include "..\client\Util.h"
-#include "..\client\Download.h"
-#include "..\client\Upload.h"
+#include <client/DownloadManagerListener.h>
+#include <client/UploadManagerListener.h>
+#include <client/ConnectionManagerListener.h>
+#include <client/QueueManagerListener.h>
+#include <client/TaskQueue.h>
+#include <client/forward.h>
+#include <client/Util.h>
+#include <client/Download.h>
+#include <client/Upload.h>
 
 #include "OMenu.h"
 #include "UCHandler.h"

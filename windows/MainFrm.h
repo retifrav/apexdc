@@ -47,7 +47,7 @@
 #include "WinUtil.h"
 #include "LineDlg.h"
 
-#include <atlsplit.h>
+#include <wtl/atlsplit.h>
 
 #define QUICK_SEARCH_MAP 20
 

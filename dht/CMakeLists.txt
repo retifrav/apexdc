@@ -21,6 +21,11 @@ target_sources(${PROJECT_NAME}
         ${sources}
 )
 
+target_precompile_headers(${PROJECT_NAME}
+    PRIVATE
+        dht/stdafx.h
+)
+
 # <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\boost;$(SolutionDir)\openssl\include;$(SolutionDir)\bzip2;$(SolutionDir)\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 target_include_directories(${PROJECT_NAME}
     PRIVATE

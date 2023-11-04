@@ -27,7 +27,7 @@
 #include <client/HttpManager.h>
 #include <client/SimpleXML.h>
 
-#include <atlctrlx.h>
+#include <wtl/atlctrlx.h>
 
 static const TCHAR thanks[] = 
 _T(" #Management#\r\n")
