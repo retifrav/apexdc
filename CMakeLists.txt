@@ -103,9 +103,14 @@ set(sources
     windows/WinUtil.cpp
 )
 
+set(resources
+    StrongDC.rc
+)
+
 target_sources(${CMAKE_PROJECT_NAME}
     PRIVATE
         ${sources}
+        ${resources}
 )
 
 # VC++ Directories > Include Directories
@@ -181,69 +186,6 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
 #   <TargetEnvironment>X64</TargetEnvironment>
 #   <TypeLibraryName>$(SolutionDir)compiled/$(ProjectName).tlb</TypeLibraryName>
 # </Midl>
-
-# <None Include="res\ADLSearch.ico" />
-# <None Include="res\arrows.png" />
-# <None Include="res\CDM.ico" />
-# <None Include="res\cell.ico" />
-# <None Include="res\cell_bg.png" />
-# <None Include="res\Directory.ico" />
-# <None Include="res\emoticon.png" />
-# <None Include="res\Exec.ico" />
-# <None Include="res\fav.png" />
-# <None Include="res\Favorites.ico" />
-# <None Include="res\FavoriteUser.ico" />
-# <None Include="res\feed.ico" />
-# <None Include="res\FinishedDL.ico" />
-# <None Include="res\FinishedUL.ico" />
-# <None Include="res\flags.png" />
-# <None Include="res\folders.png" />
-# <None Include="res\Hub.ico" />
-# <None Include="res\HubOff.ico" />
-# <None Include="res\magnet.ico" />
-# <None Include="res\netstats.ico" />
-# <None Include="res\notepad.ico" />
-# <None Include="res\o_settings_dlg.png" />
-# <None Include="res\PM.ico" />
-# <None Include="res\PublicHubs.ico" />
-# <None Include="res\queue.ico" />
-# <None Include="res\Recents.ico" />
-# <None Include="res\Search.ico" />
-# <None Include="res\search_icons.png" />
-# <None Include="res\searchspy.ico" />
-# <None Include="res\shutdown.ico" />
-# <None Include="res\sounds.ico" />
-# <None Include="res\speeds.png" />
-# <None Include="res\splash.png" />
-# <None Include="res\state.png" />
-# <None Include="res\stop_ikona.ico" />
-# <None Include="res\StrongDC.ico" />
-# <None Include="res\toolbar.png" />
-# <None Include="res\toolbar20-highlight.png" />
-# <None Include="res\toolbar20.png" />
-# <None Include="res\TranferSpeeds.png" />
-# <None Include="res\TranferUser.ico" />
-# <None Include="res\transfer_compressed.ico" />
-# <None Include="res\transfer_segmented.ico" />
-# <None Include="res\TransferSpeedsBW.png" />
-# <None Include="res\Update.ico" />
-# <None Include="res\uqueue.ico" />
-# <None Include="res\User.ico" />
-# <None Include="res\UserOff.ico" />
-# <None Include="res\users.png" />
-# <None Include="res\WinampControl-highlight.png" />
-# <None Include="res\WinampControl.png" />
-# <None Include="changelog.txt" />
-# <None Include="Compile.txt" />
-# <None Include="Extensions.txt" />
-
-# <ItemGroup>
-#   <Image Include="res\statusbar.png" />
-# </ItemGroup>
-
-# <ItemGroup>
-#   <ResourceCompile Include="StrongDC.rc" />
-# </ItemGroup>
 
 include(GNUInstallDirs)
 

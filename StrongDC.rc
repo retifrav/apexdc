@@ -1,14 +1,14 @@
 // Microsoft Visual C++ generated resource script.
 //
-#include "windows\resource.h"
+#include "windows\Resource.h"
 
 #define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
 //
 // Generated from the TEXTINCLUDE 2 resource.
 //
-#include <atlres.h>
-#include ".\client\version.h"
+#include <wtl/atlres.h>
+#include ".\client\client\version.h"
 
 /////////////////////////////////////////////////////////////////////////////
 #undef APSTUDIO_READONLY_SYMBOLS
@@ -1621,13 +1621,13 @@ END
 
 1 TEXTINCLUDE
 BEGIN
-    "windows\\resource.h\0"
+    "windows\\Resource.h\0"
 END
 
 2 TEXTINCLUDE
 BEGIN
-    "#include <atlres.h>\r\n"
-    "#include "".\\client\\version.h""\r\n"
+    "#include <wtl/atlres.h>\r\n"
+    "#include "".\\client\\client\\version.h""\r\n"
     "\0"
 END
 
