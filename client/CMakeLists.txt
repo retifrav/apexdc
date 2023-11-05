@@ -79,8 +79,6 @@ target_sources(${PROJECT_NAME}
         ${sources}
 )
 
-# \MakeDefs\MakeDefs.exe" .\client\StringDefs.h .\client\StringDefs.cpp .\EN_Example.xml
-
 # $(SolutionDir);$(SolutionDir)\boost;$(SolutionDir)\openssl\include;$(SolutionDir)\bzip2;$(SolutionDir)\zlib;
 target_include_directories(${PROJECT_NAME}
     PRIVATE
@@ -101,10 +99,10 @@ target_compile_definitions(${PROJECT_NAME}
     PRIVATE
         "_WIN32_WINNT=0x600"
         "WINVER=0x600"
-        #"NDEBUG"
         "_UNICODE"
         "UNICODE"
-        #"HAS_PCH"
+        "HAS_PCH"
+        "NDEBUG"
 )
 
 target_link_libraries(${PROJECT_NAME}
@@ -117,3 +115,5 @@ target_link_libraries(${PROJECT_NAME}
         boost
         dht # client needs dht, and dht needs client, isn't it great
 )
+
+# \MakeDefs\MakeDefs.exe" .\client\StringDefs.h .\client\StringDefs.cpp .\EN_Example.xml

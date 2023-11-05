@@ -136,7 +136,7 @@ target_compile_definitions(${CMAKE_PROJECT_NAME}
         "HAS_PCH"
         "_UNICODE"
         "UNICODE"
-        #"NDEBUG"
+        "NDEBUG"
 )
 
 find_package(minizip CONFIG REQUIRED)

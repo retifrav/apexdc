@@ -39,10 +39,10 @@ target_include_directories(${PROJECT_NAME}
 
 target_compile_definitions(${PROJECT_NAME}
     PRIVATE
-        #"NDEBUG"
         #"_UNICODE"
         #"UNICODE"
         "HAS_PCH"
+        "NDEBUG"
 )
 
 target_link_libraries(${PROJECT_NAME}
