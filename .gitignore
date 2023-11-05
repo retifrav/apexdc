@@ -1,9 +1,7 @@
+/.vs/
+/.cache/
 /build/
 /install/
-/compiled
-/vc_intermediate
-/.vs
-/.cache
 
 *.aps
 *.bak
@@ -20,38 +18,7 @@
 
 thumbs.db
 .DS_Store
-compile_commands.json
+Jamfile
 
-/MakeDefs/MakeDefs.vcproj
-/MakeDefs/Jamfile
-
+/compile_commands.json
 /client/gitdefs.inc
-/client/StringDefs.cpp
-/client/ServerSocket.cpp
-/client/ServerSocket.h
-/client/memcpy_amd.cpp
-/client/memcpy_amd.h
-/client/TraceManager.cpp
-/client/TraceManager.h
-/client/BitInputStream.h
-/client/BitOutputStream.h
-
-/dht/Jamfile
-
-/miniupnpc/Jamfile
-/miniupnpc/SConscript
-/miniupnpc/minihttptestserver.c
-/miniupnpc/miniupnpcmodule.c
-/miniupnpc/minixmlvalid.c
-/miniupnpc/testigddescparse.c
-/miniupnpc/testminiwget.c
-/miniupnpc/testminixml.c
-/miniupnpc/testupnpreplyparse.c
-/miniupnpc/upnpc.c
-/miniupnpc/wingenminiupnpcstrings.c
-
-/res/*.bmp
-/res/favus.ico
-
-/windows/InputBox.cpp
-/windows/InputBox.h

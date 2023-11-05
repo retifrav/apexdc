@@ -1,7 +1,7 @@
 // MakeDefs.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
+#include "StdAfx.h"
 
 #include <client/SimpleXML.h>
 #include <client/File.h>

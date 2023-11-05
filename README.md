@@ -13,6 +13,7 @@ This is a modified mirror/fork of [ApexDC++](https://apexdc.net/) project source
         - [ARM is not supported](#arm-is-not-supported)
     - [With Visual Studio / MSBuild](#with-visual-studio--msbuild)
         - [Spectre mitigations](#spectre-mitigations)
+- [MakeDefs](#makedefs)
 - [License](#license)
 
 <!-- /MarkdownTOC -->
@@ -32,10 +33,10 @@ The original sources are obtained from [release archives](https://sourceforge.ne
 ### Things to do
 
 1. ⏳ Replace Visual Studio / MSBuild with CMake
-    - ⏳ create targets for all the subprojects
+    - ✅ create targets for all the subprojects
         + ✅ dht
         + ✅ client
-        + ⏳ MakeDefs
+        + ✅ MakeDefs
         + ✅ application
     - ✅ preserve compile definitions, linking, pre-compiled headers, etc
     - ⏳ resources compilation
@@ -154,6 +155,19 @@ So install them via Visual Studio Installer:
 ![Visual Studio installer MSVC with Spectre mitigations](https://raw.githubusercontent.com/retifrav/apexdc/master/misc/visual-studio-installer-msvc-spectre.png "Visual Studio installer MSVC with Spectre mitigations")
 
 ![Visual Studio installer ATL with Spectre mitigations](https://raw.githubusercontent.com/retifrav/apexdc/master/misc/visual-studio-installer-atl-spectre.png "Visual Studio installer ATL with Spectre mitigations")
+
+## MakeDefs
+
+The `MakeDefs` tool generates UI strings in XML file and `./client/client/StringDefs.cpp` from `./client/client/StringDefs.h`. So if you'll need to modify UI strings, make changes in `StringDefs.h`, build the tool (`-DBUILD_MAKEDEFS=1`) and run it like this:
+
+``` sh
+$ cd /path/to/apexdc/build/vcpkg-windows/MakeDefs
+$ ./MakeDefs.exe ../../../client/client/StringDefs.h \
+    ../../../client/client/StringDefs.cpp \
+    ../../../strings-example-english.xml
+```
+
+To reflect those new strings in the GUI, one apparently would need to rebuild the project or (*and?*) use that generated XML file somehow.
 
 ## License
 

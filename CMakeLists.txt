@@ -6,6 +6,8 @@ project(
     VERSION 1.6.5
 )
 
+option(BUILD_MAKEDEFS "Build MakeDefs tool" 0)
+
 #set(CMAKE_CXX_STANDARD 14)
 #set(CMAKE_CXX_STANDARD_REQUIRED YES)
 
@@ -142,6 +144,9 @@ find_package(zlib CONFIG REQUIRED)
 add_subdirectory(boost)
 add_subdirectory(dht)
 add_subdirectory(client)
+if(BUILD_MAKEDEFS)
+    add_subdirectory(MakeDefs)
+endif()
 
 # it should not be necessary to explicitly find these
 # find_library(ShFolder_LIBRARY_PATH ShFolder)
@@ -240,8 +245,6 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
 #   <ResourceCompile Include="StrongDC.rc" />
 # </ItemGroup>
 
-# for CMAKE_INSTALL_LIBDIR, CMAKE_INSTALL_BINDIR, CMAKE_INSTALL_INCLUDEDIR and others
 include(GNUInstallDirs)
 
-# install the target
 install(TARGETS ${CMAKE_PROJECT_NAME})
