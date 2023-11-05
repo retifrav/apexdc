@@ -11,10 +11,12 @@ project(
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS YES)
 
+# global MSVC runtime linking for all project targets
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 # global debug postfix for libraries (executables still need to set it)
 set(CMAKE_DEBUG_POSTFIX "d" CACHE STRING "Filename postfix for libraries under DEBUG configuration")
 
-add_executable(${CMAKE_PROJECT_NAME}) # WIN32
+add_executable(${CMAKE_PROJECT_NAME} WIN32)
 
 set(sources
     windows/ADLSearchFrame.cpp
@@ -115,7 +117,6 @@ target_precompile_headers(${CMAKE_PROJECT_NAME}
 set_target_properties(${CMAKE_PROJECT_NAME}
     PROPERTIES
         DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX}
-        MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>"
         #LINK_FLAGS
         #    "/NODEFAULTLIB:kernel32.lib;advapi32.lib;user32.lib;gdi32.lib;shell32.lib;comdlg32.lib;version.lib;mpr.lib;rasapi32.lib;winmm.lib;winspool.lib;vfw32.lib;secur32.lib;oleacc.lib;oledlg.lib;sensapi.lib /DELAYLOAD:oleaut32.dll"
 )
@@ -142,15 +143,16 @@ add_subdirectory(boost)
 add_subdirectory(dht)
 add_subdirectory(client)
 
-find_library(ShFolder_LIBRARY_PATH ShFolder)
-find_library(WS2_32_LIBRARY_PATH WS2_32)
-find_library(WinMM_LIBRARY_PATH WinMM)
-find_library(powrprof_LIBRARY_PATH powrprof)
+# it should not be necessary to explicitly find these
+# find_library(ShFolder_LIBRARY_PATH ShFolder)
+# find_library(WS2_32_LIBRARY_PATH WS2_32)
+# find_library(WinMM_LIBRARY_PATH WinMM)
+# find_library(powrprof_LIBRARY_PATH powrprof)
 
-message(STATUS "ShFolder_LIBRARY_PATH: ${ShFolder_LIBRARY_PATH}")
-message(STATUS "WS2_32_LIBRARY_PATH: ${WS2_32_LIBRARY_PATH}")
-message(STATUS "WinMM_LIBRARY_PATH: ${WinMM_LIBRARY_PATH}")
-message(STATUS "powrprof_LIBRARY_PATH: ${powrprof_LIBRARY_PATH}")
+# message(STATUS "ShFolder_LIBRARY_PATH: ${ShFolder_LIBRARY_PATH}")
+# message(STATUS "WS2_32_LIBRARY_PATH: ${WS2_32_LIBRARY_PATH}")
+# message(STATUS "WinMM_LIBRARY_PATH: ${WinMM_LIBRARY_PATH}")
+# message(STATUS "powrprof_LIBRARY_PATH: ${powrprof_LIBRARY_PATH}")
 
 target_link_libraries(${CMAKE_PROJECT_NAME}
     PRIVATE
@@ -158,12 +160,12 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
         dht
         client
         wtl
-        ${ShFolder_LIBRARY_PATH}
-        ${WS2_32_LIBRARY_PATH}
-        ${WinMM_LIBRARY_PATH}
-        ${powrprof_LIBRARY_PATH}
         miniupnpc::miniupnpc
         natpmp
+        ShFolder #${ShFolder_LIBRARY_PATH}
+        WS2_32 #${WS2_32_LIBRARY_PATH}
+        WinMM #${WinMM_LIBRARY_PATH}
+        powrprof #${powrprof_LIBRARY_PATH}
 )
 
 # <AdditionalOptions>/FIXED:NO /SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>

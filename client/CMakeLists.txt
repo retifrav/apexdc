@@ -92,6 +92,11 @@ target_include_directories(${PROJECT_NAME}
         #$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
 
+target_precompile_headers(${CMAKE_PROJECT_NAME}
+    PRIVATE
+        client/stdinc.h
+)
+
 target_compile_definitions(${PROJECT_NAME}
     PRIVATE
         "_WIN32_WINNT=0x600"
@@ -107,9 +112,8 @@ target_link_libraries(${PROJECT_NAME}
         bzip2
         zlib
         minizip
-        # OpenSSL::SSL
-        # OpenSSL::Crypto
+        OpenSSL::SSL
+        OpenSSL::Crypto
         boost
-        # wtl
         dht # client needs dht, and dht needs client, isn't it great
 )
