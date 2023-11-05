@@ -1,18 +1,18 @@
 # ApexDC++
 
-This is a modified mirror/fork of [ApexDC++](https://apexdc.net) project sources. It isn't exactly a mirror, because it's not a 1-to-1 copy of the original source, but it isn't exactly a fork either, because core source code is the same.
+This is a modified mirror/fork of [ApexDC++](https://apexdc.net/) project sources. It isn't exactly a mirror, because it's not a 1-to-1 copy of the original sources, but it isn't exactly a fork either, because the core source code is the same.
 
 <!-- MarkdownTOC -->
 
 - [Why mirror/fork](#why-mirrorfork)
-- [Syncing with original sources](#syncing-with-original-sources)
+    - [Things to do](#things-to-do)
+    - [Syncing with original sources](#syncing-with-original-sources)
 - [How to build](#how-to-build)
+    - [Version control definitions](#version-control-definitions)
     - [With CMake](#with-cmake)
         - [ARM is not supported](#arm-is-not-supported)
     - [With Visual Studio / MSBuild](#with-visual-studio--msbuild)
         - [Spectre mitigations](#spectre-mitigations)
-        - [Version control definitions](#version-control-definitions)
-- [Things to do](#things-to-do)
 - [License](#license)
 
 <!-- /MarkdownTOC -->
@@ -21,15 +21,34 @@ This is a modified mirror/fork of [ApexDC++](https://apexdc.net) project sources
 
 The point of creating this repository was to:
 
-- get ApexDC++ sources under Git version control, as I failed to find a publicly available repository;
-- make it build with CMake (*and probably drop Visual Studio / MSBuild support*);
+- get ApexDC++ sources under Git version control, as I failed to find a publicly available repository (*even though [make-gitdefs.sh](make-gitdefs.sh) points out that original sources are in fact already managed by Git somewhere*);
+- make it build with CMake instead of Visual Studio / MSBuild support;
 - stop vendoring dependencies and resolve them with vcpkg instead;
-- try to improve/implement High DPI support, so UI wouldn't be so blurry;
-- customize some default settings such as font size, colors, etc.
+    + update dependencies to the latest versions along the way;
+- maybe customize some default settings such as font size, colors, etc.
 
 The original sources are obtained from [release archives](https://sourceforge.net/projects/apexdc/files/ApexDC%2B%2B/).
 
-## Syncing with original sources
+### Things to do
+
+1. ⏳ Replace Visual Studio / MSBuild with CMake
+    - ⏳ create targets for all the subprojects
+        + ✅ dht
+        + ✅ client
+        + ⏳ MakeDefs
+        + ✅ application
+    - ✅ preserve compile definitions, linking, pre-compiled headers, etc
+    - ⏳ resources compilation
+2. ⏳ Stop vendoring dependencies, use vcpkg instead
+    - ⏳ [boost](https://boost.org)
+    - ✅ [bzip2](https://sourceware.org/bzip2/)
+    - ✅ [MiniUPnP](http://miniupnp.free.fr)
+    - ✅ [NAT-PMP](http://miniupnp.free.fr/libnatpmp.html)
+    - ✅ [OpenSSL](https://openssl.org)
+    - ✅ [WTL](https://sourceforge.net/projects/wtl/)
+    - ✅ [zlib](http://zlib.net)
+
+### Syncing with original sources
 
 Before syncing with a newer version from upstream/original sources, first remove executable attribute from the new files:
 
@@ -43,7 +62,25 @@ and then convert line endings to Unix style:
 $ find . -type f -print0 | xargs -0 dos2unix
 ```
 
+Finally, if you stumble upon any UTF-16 files, convert them to UTF-8 (*simply copying contents to a new file works fine*). There is nothing but troubles from UTF-16.
+
 ## How to build
+
+Tested environment:
+
+- Windows
+    + 10
+    + 11
+- MSVC
+    + v143
+
+### Version control definitions
+
+Since original Git tagging system isn't figured out yet, create a dummy `client/gitdefs.inc`:
+
+``` cpp
+#define NO_VERSION_CONTROL 1
+```
 
 ### With CMake
 
@@ -53,11 +90,15 @@ Required tools:
 - vcpkg
 - MSVC
 
+Building:
+
 ``` sh
 $ cd /path/to/apexdc
 $ cmake --preset vcpkg-windows
 $ cmake --build --preset vcpkg-windows
 ```
+
+Resulting binary will be in `/path/to/apexdc/install`.
 
 #### ARM is not supported
 
@@ -71,20 +112,26 @@ C:\programs\_src\apexdc\boost\boost/thread/win32/interlocked_read.hpp(90): error
 C:\programs\_src\apexdc\boost\boost/thread/win32/interlocked_read.hpp(90): note: Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or parenthesized function-style cast
 ```
 
-Choose x64 target/configuration instead:
+so choose x64 target/configuration instead:
 
 - with Ninja generator it is enough to launch x64 Native Tools Command Prompt;
 - with Visual Studio generator you'll also need to pass `-A x64`.
 
 ### With Visual Studio / MSBuild
 
-If you'd like to build the project with Visual Studio / MSBuild, you'd need to checkout the `fee6571e462df94a72157d2b2a04aab8a1073ba5` revision with original sources. The build almost just works out of the box, only need to fix a [couple of things](#version-control-definitions) in MakeDefs subproject.
+If you'd like to build the project with Visual Studio / MSBuild, you'll need to checkout the [fee6571e462df94a72157d2b2a04aab8a1073ba5](https://github.com/retifrav/apexdc/tree/fee6571e462df94a72157d2b2a04aab8a1073ba5) revision with original sources.
 
 Required tools:
 
 - Visual Studio
     + ATL
     + MSVC
+
+Open `StrongDC.sln` in Visual Studio, and disable/remove Pre-Build Event in `MakeDefs` project properties:
+
+![Visual Studio, MakeDefs properties, removed Pre-Build Event](https://raw.githubusercontent.com/retifrav/apexdc/master/misc/visual-studio-makedefs-properties-pre-build-event.png "Visual Studio, MakeDefs properties, removed Pre-Build Event")
+
+Then change configuration to Release x64 and build the solution.
 
 #### Spectre mitigations
 
@@ -107,30 +154,6 @@ So install them via Visual Studio Installer:
 ![Visual Studio installer MSVC with Spectre mitigations](https://raw.githubusercontent.com/retifrav/apexdc/master/misc/visual-studio-installer-msvc-spectre.png "Visual Studio installer MSVC with Spectre mitigations")
 
 ![Visual Studio installer ATL with Spectre mitigations](https://raw.githubusercontent.com/retifrav/apexdc/master/misc/visual-studio-installer-atl-spectre.png "Visual Studio installer ATL with Spectre mitigations")
-
-#### Version control definitions
-
-Since original Git tagging system isn't figured out yet, create a dummy `client/gitdefs.inc`:
-
-``` cpp
-#define NO_VERSION_CONTROL 1
-```
-
-and disable Pre-Build Event in `MakeDefs` project properties:
-
-![Visual Studio, MakeDefs properties, removed Pre-Build Event](https://raw.githubusercontent.com/retifrav/apexdc/master/misc/visual-studio-makedefs-properties-pre-build-event.png "Visual Studio, MakeDefs properties, removed Pre-Build Event")
-
-## Things to do
-
-1. [ ] implement building with CMake
-2. [ ] stop vendoring dependencies, use vcpkg instead
-    - [ ] [boost](https://boost.org)
-    - [x] [bzip2](https://sourceware.org/bzip2/)
-    - [x] [MiniUPnP](http://miniupnp.free.fr)
-    - [x] [NAT-PMP](http://miniupnp.free.fr/libnatpmp.html)
-    - [x] [OpenSSL](https://openssl.org)
-    - [x] [WTL](https://sourceforge.net/projects/wtl/)
-    - [x] [zlib](http://zlib.net)
 
 ## License
 
